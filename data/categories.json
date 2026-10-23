@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "electric-scooters",
+    "name": "Electric Scooters",
+    "description": "Commuter to hyper-performance scooters, up to 55 MPH.",
+    "image": "https://images.unsplash.com/photo-1594054763281-0946baaad462?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "electric-bikes",
+    "name": "Electric Bikes",
+    "description": "Fat tire, mountain and cargo electric bikes.",
+    "image": "https://images.unsplash.com/photo-1624243519828-52a0f2c88af3?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "folding-e-bikes",
+    "name": "Folding E-Bikes",
+    "description": "Compact e-bikes that fold for trains, trunks and apartments.",
+    "image": "https://images.pexels.com/photos/6502400/pexels-photo-6502400.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "slug": "commuter-e-bikes",
+    "name": "Commuter E-Bikes",
+    "description": "Upright, comfortable e-bikes built for the daily ride.",
+    "image": "https://images.unsplash.com/photo-1620802051782-725fa33db067?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "mobility-accessories",
+    "name": "Electric Mobility Accessories",
+    "description": "Batteries, chargers, brakes, tires, helmets and locks.",
+    "image": "https://images.pexels.com/photos/8811560/pexels-photo-8811560.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "slug": "electronics",
+    "name": "Electronics",
+    "description": "Laptops, tablets, TVs and smart home.",
+    "image": "https://images.unsplash.com/photo-1426024084828-5da21e13f5dc?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "gadgets",
+    "name": "Gadgets",
+    "description": "Headphones, wearables, chargers and everyday tech.",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  }
+]

@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E Plugg — Electric Scooters, E-Bikes &amp; Electronics Superstore</title>
+  <meta name="description" content="E Plugg is the U.S. online superstore for electric scooters, e-bikes, folding and commuter e-bikes, mobility accessories, electronics and gadgets. Free shipping over $150 across the contiguous US.">
+  <meta property="og:title" content="E Plugg — Electric Mobility &amp; Electronics Superstore">
+  <meta property="og:description" content="Performance scooters, e-bikes, parts and electronics. Shipping across the contiguous United States.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#07090E">
+  <meta name='impact-site-verification' value='aad8e7c2-b22e-4483-a290-fbe37bf92e0d'>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwMEY1NjYiLz48cGF0aCBkPSJNMzcgOCAxNSAzNmgxNGwtNCAyMCAyNC0zMEgzNHoiIGZpbGw9IiMwNzA5MEUiIHRyYW5zZm9ybT0icm90YXRlKC0xMCAzMiAzMikiLz48L3N2Zz4K">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>:root {
+  --bg: #07090E;
+  --bg-2: #0C1018;
+  --card: #10151F;
+  --line: #1B2230;
+  --line-green: #0E3D22;
+  --green: #00F566;
+  --green-2: #00C853;
+  --green-dim: rgba(0, 245, 102, 0.12);
+  --text: #F2F5F8;
+  --muted: #8A97AB;
+  --danger: #FF5A5F;
+  --radius: 26px;
+  --font: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --maxw: 1200px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 76px;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button, input, select, textarea { font: inherit; color: inherit; }
+.wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
+
+/* Ticker */
+.ticker { background: var(--green); color: #04150A; overflow: hidden; white-space: nowrap; height: 34px; display: flex; align-items: center; }
+.ticker-track { display: inline-flex; gap: 40px; padding-left: 16px; font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: .18em; animation: ticker 32s linear infinite; }
+.ticker-track span { display: inline-flex; gap: 40px; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
+
+/* Header */
+.topbar { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 14px; padding: 12px 16px; background: rgba(10, 13, 19, .92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line-green); }
+.icon-btn { background: none; border: 0; padding: 6px; display: inline-flex; color: var(--text); cursor: pointer; }
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand-mark { width: 38px; height: 38px; border-radius: 10px; background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwMEY1NjYiLz48cGF0aCBkPSJNMzcgOCAxNSAzNmgxNGwtNCAyMCAyNC0zMEgzNHoiIGZpbGw9IiMwNzA5MEUiIHRyYW5zZm9ybT0icm90YXRlKC0xMCAzMiAzMikiLz48L3N2Zz4K") center/cover; box-shadow: 0 0 22px rgba(0, 245, 102, .35); flex: none; }
+.brand-word { font-weight: 700; font-size: 22px; letter-spacing: -.02em; color: var(--green); }
+.brand-word b { color: var(--text); font-weight: 700; }
+.topbar-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+.cart-pill { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line-green); background: rgba(0, 245, 102, .06); color: var(--green); font-family: var(--mono); font-weight: 700; }
+.desk-nav { display: none; gap: 22px; margin-left: 24px; font-size: 15px; color: var(--muted); }
+.desk-nav a:hover { color: var(--text); }
+
+/* Drawer */
+.drawer-backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .6); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 40; }
+.drawer { position: fixed; top: 0; left: 0; bottom: 0; width: min(320px, 86vw); background: var(--bg-2); border-right: 1px solid var(--line); transform: translateX(-100%); transition: transform .25s; z-index: 41; padding: 20px; overflow-y: auto; }
+.drawer.open { transform: none; }
+.drawer-backdrop.open { opacity: 1; pointer-events: auto; }
+.drawer h4 { margin: 24px 0 10px; }
+.drawer a { display: block; padding: 10px 0; color: var(--muted); font-size: 17px; }
+.drawer a:hover { color: var(--text); }
+
+/* Type helpers */
+.eyebrow { font-family: var(--mono); font-size: 13px; letter-spacing: .28em; text-transform: uppercase; color: var(--green); margin: 0 0 4px; font-weight: 500; }
+h1, h2, h3 { letter-spacing: -.02em; margin: 0; line-height: 1.1; }
+h2 { font-size: clamp(28px, 6vw, 40px); font-weight: 700; }
+.muted { color: var(--muted); }
+.green { color: var(--green); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 16px; padding: 15px 26px; font-weight: 700; font-size: 18px; border: 1px solid transparent; cursor: pointer; transition: transform .1s, box-shadow .2s; }
+.btn:active { transform: scale(.98); }
+.btn-green { background: var(--green); color: #04150A; box-shadow: 0 0 30px rgba(0, 245, 102, .25); }
+.btn-ghost { background: rgba(255, 255, 255, .04); border-color: #2A3344; color: var(--text); font-weight: 500; }
+.btn-dark { background: #060807; color: var(--green); }
+.btn-block { width: 100%; }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+/* Sections */
+.section { padding: 40px 0; }
+.section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+.view-all { color: var(--text); opacity: .85; display: inline-flex; gap: 8px; align-items: center; font-size: 17px; white-space: nowrap; }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(3px) brightness(.35) saturate(.6); transform: scale(1.06); }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7, 9, 14, .3), var(--bg)); }
+.hero-inner { position: relative; padding: 48px 16px 40px; }
+.hero-logo { display: flex; align-items: center; gap: 16px; margin-bottom: 30px; }
+.hero-logo .brand-mark { width: 84px; height: 84px; border-radius: 20px; }
+.hero-logo .brand-word { font-size: clamp(56px, 14vw, 88px); }
+.pill-tag { display: inline-flex; align-items: center; gap: 12px; padding: 8px 20px; border: 1px solid var(--green-2); border-radius: 999px; font-family: var(--mono); color: var(--green); letter-spacing: .24em; font-size: 14px; }
+.pill-tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--green-2); }
+.hero h1 { font-size: clamp(40px, 10vw, 72px); font-weight: 700; margin: 28px 0 18px; max-width: 12ch; }
+.hero p.lead { color: #B8C2D2; font-size: 19px; max-width: 46ch; margin: 0 0 28px; }
+.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-stats { display: flex; flex-wrap: wrap; gap: 26px 40px; margin-top: 40px; font-family: var(--mono); }
+.hero-stats b { font-size: 30px; }
+.hero-stats span { color: var(--muted); letter-spacing: .1em; margin-left: 8px; }
+
+/* Trust bar */
+.trust { background: var(--bg-2); border-bottom: 1px solid var(--line); padding: 28px 0; }
+.trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 20px; }
+.trust-item { display: flex; gap: 14px; align-items: flex-start; }
+.trust-icon { width: 48px; height: 48px; flex: none; border-radius: 14px; background: var(--green-dim); color: var(--green); display: grid; place-items: center; }
+.trust-item b { display: block; font-size: 18px; font-weight: 600; }
+.trust-item small { color: var(--muted); font-size: 15px; }
+
+/* Category grid */
+.cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cat-card { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 1 / 1; background: var(--card); }
+.cat-card.wide { grid-column: span 2; aspect-ratio: 2.05 / 1; }
+.cat-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.cat-card:hover img { transform: scale(1.04); }
+.cat-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(7, 9, 14, .92)); }
+.cat-card .cat-label { position: absolute; left: 20px; right: 20px; bottom: 18px; z-index: 1; }
+.cat-card .count { font-family: var(--mono); color: var(--green); letter-spacing: .2em; font-size: 12px; }
+.cat-card h3 { font-size: clamp(20px, 5vw, 30px); font-weight: 700; }
+.cat-card.wide h3 { font-size: clamp(26px, 6vw, 38px); }
+
+/* Empty state */
+.empty { border: 1.5px dashed var(--line-green); border-radius: var(--radius); padding: 44px 24px; text-align: center; }
+.empty h3 { font-weight: 400; font-size: 24px; margin-bottom: 10px; }
+.empty p { color: var(--muted); margin: 0 auto; max-width: 40ch; font-size: 17px; }
+
+/* Product cards */
+.prod-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.prod-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
+.prod-card .thumb { position: relative; aspect-ratio: 1 / 1; background: #0A0E15; }
+.prod-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.badge { position: absolute; top: 10px; left: 10px; background: var(--green); color: #04150A; font-family: var(--mono); font-weight: 700; font-size: 11px; letter-spacing: .08em; padding: 4px 8px; border-radius: 8px; }
+.prod-card .info { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.prod-card .brand-line { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+.prod-card .name { font-weight: 600; font-size: 16px; line-height: 1.25; }
+.price { font-family: var(--mono); font-weight: 700; color: var(--green); }
+.price s { color: var(--muted); font-weight: 500; margin-left: 6px; font-size: .85em; }
+.prod-card .price { margin-top: auto; padding-top: 6px; }
+
+/* Deals block */
+.deals { border: 1px solid var(--line-green); border-radius: var(--radius); padding: 28px 22px; background:
+  linear-gradient(rgba(0, 245, 102, .03) 1px, transparent 1px) 0 0/36px 36px,
+  linear-gradient(90deg, rgba(0, 245, 102, .03) 1px, transparent 1px) 0 0/36px 36px,
+  linear-gradient(160deg, #0B1712, #090C11 60%); }
+.deals h2 { margin: 6px 0 20px; }
+.countdown { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 26px; }
+.countdown .box { min-width: 56px; padding: 10px 12px; border: 1px solid var(--line-green); border-radius: 12px; background: rgba(0, 245, 102, .06); color: var(--green); font-family: var(--mono); font-size: 28px; font-weight: 700; text-align: center; }
+.countdown .sep { color: var(--muted); font-size: 22px; }
+.countdown a { margin-left: 14px; font-size: 18px; }
+
+/* Promo banners */
+.banner { position: relative; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--line); min-height: 420px; display: flex; align-items: flex-end; }
+.banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7, 9, 14, .85), rgba(7, 9, 14, .2)); }
+.banner-body { position: relative; z-index: 1; padding: 32px 28px; }
+.banner h2 { font-size: clamp(34px, 8vw, 54px); margin: 8px 0 24px; max-width: 14ch; }
+.promo { position: relative; overflow: hidden; background: var(--green); color: #04150A; border-radius: var(--radius); padding: 36px 28px; }
+.promo .eyebrow { color: #04150A; font-weight: 700; }
+.promo h2 { font-size: clamp(38px, 9vw, 60px); margin: 14px 0 28px; max-width: 13ch; }
+.promo-bolt { position: absolute; right: -30px; top: -20px; width: 260px; opacity: .14; }
+.promo-row { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; position: relative; }
+.code-chip { border: 2px dashed #04150A; border-radius: 16px; padding: 14px 24px; font-family: var(--mono); font-weight: 700; font-size: 20px; letter-spacing: .04em; background: none; color: inherit; cursor: pointer; }
+
+/* Footer */
+.footer { background: var(--bg-2); border-top: 1px solid var(--line); margin-top: 40px; padding: 48px 0 0; }
+.footer .brand-mark { width: 64px; height: 64px; border-radius: 16px; }
+.footer .brand-word { font-size: 46px; }
+.footer .tagline { color: #B8C2D2; font-size: 18px; margin: 18px 0 24px; max-width: 40ch; }
+.news { display: flex; gap: 14px; max-width: 520px; }
+.news input { flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 14px 22px; font-size: 18px; }
+.news button { border-radius: 16px; padding: 12px 30px; }
+.socials { display: flex; gap: 14px; margin: 26px 0 8px; }
+.socials a { width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 14px; display: grid; place-items: center; color: var(--muted); }
+.socials a:hover { color: var(--text); border-color: #2A3344; }
+.foot-cols { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 30px; }
+.foot-col h4 { font-family: var(--mono); color: var(--green); letter-spacing: .28em; font-size: 14px; font-weight: 500; margin: 24px 0 14px; }
+.foot-col a { display: block; color: #B8C2D2; font-size: 18px; padding: 6px 0; }
+.foot-col a:hover { color: var(--text); }
+.contact-lines { margin: 30px 0 40px; display: grid; gap: 12px; color: var(--muted); font-size: 16px; }
+.contact-lines div { display: flex; gap: 12px; align-items: center; }
+.legal { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: 15px; }
+.pay-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+.pay-badges span { border: 1px solid var(--line); border-radius: 10px; padding: 6px 12px; font-family: var(--mono); font-size: 13px; letter-spacing: .1em; color: var(--muted); }
+.pay-badges span.stripe { border-color: var(--green-2); color: var(--green); }
+
+/* Bottom nav */
+.bottom-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: repeat(4, 1fr); background: rgba(10, 13, 19, .97); border-top: 1px solid var(--line-green); padding: 8px 0 calc(8px + env(safe-area-inset-bottom)); }
+.bottom-nav a { display: flex; flex-direction: column; align-items: center; gap: 4px; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; color: var(--muted); }
+.bottom-nav svg { width: 26px; height: 26px; }
+.bottom-nav a.active { color: var(--green); }
+
+/* Shop page */
+.page-head { padding: 32px 0 8px; }
+.page-head h1 { font-size: clamp(32px, 7vw, 48px); }
+.filters { display: flex; gap: 10px; overflow-x: auto; padding: 16px 0; scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.chip { flex: none; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; color: var(--muted); background: none; cursor: pointer; font-size: 15px; }
+.chip.on { border-color: var(--green-2); color: var(--green); background: var(--green-dim); }
+.toolbar { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+.field { background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; font-size: 16px; }
+.toolbar .field.search { flex: 1 1 200px; }
+
+/* Product page */
+.pdp { display: grid; gap: 24px; padding: 24px 0; }
+.gallery-main { aspect-ratio: 1 / 1; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #0A0E15; }
+.gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+.thumbs { display: flex; gap: 10px; margin-top: 10px; overflow-x: auto; }
+.thumbs button { width: 72px; height: 72px; flex: none; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); padding: 0; background: none; cursor: pointer; }
+.thumbs button.on { border-color: var(--green); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; }
+.pdp h1 { font-size: clamp(28px, 6vw, 40px); margin: 6px 0 12px; }
+.pdp .price { font-size: 28px; }
+.qty { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.qty button { background: none; border: 0; width: 44px; height: 48px; font-size: 20px; cursor: pointer; }
+.qty span { min-width: 36px; text-align: center; font-family: var(--mono); }
+.specs { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.specs td { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.specs td:first-child { color: var(--muted); width: 45%; }
+.crumbs { font-size: 14px; color: var(--muted); padding-top: 18px; }
+.crumbs a:hover { color: var(--text); }
+
+/* Cart */
+.cart-line { display: grid; grid-template-columns: 84px 1fr auto; gap: 14px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.cart-line img { width: 84px; height: 84px; object-fit: cover; border-radius: 14px; background: #0A0E15; }
+.link-btn { background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 0; font-size: 14px; }
+.summary { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; display: grid; gap: 10px; }
+.summary .row { display: flex; justify-content: space-between; }
+.summary .total { font-size: 22px; font-weight: 700; border-top: 1px solid var(--line); padding-top: 12px; }
+.promo-input { display: flex; gap: 8px; }
+.promo-input .field { flex: 1; min-width: 0; text-transform: uppercase; }
+
+/* Prose pages */
+.prose { max-width: 760px; padding: 24px 0 20px; }
+.prose h1 { font-size: clamp(32px, 7vw, 46px); margin: 8px 0 20px; }
+.prose h2 { font-size: 22px; margin: 28px 0 8px; }
+.prose p, .prose li { color: #C3CCDA; font-size: 17px; }
+.prose a { color: var(--green); text-decoration: underline; }
+.faq details { border-bottom: 1px solid var(--line); padding: 16px 0; }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 18px; }
+.faq details p { margin: 10px 0 0; }
+.form-grid { display: grid; gap: 12px; max-width: 560px; }
+.form-grid label { display: grid; gap: 6px; font-size: 15px; color: var(--muted); }
+.notice { border: 1px solid var(--line-green); background: var(--green-dim); border-radius: 16px; padding: 14px 16px; color: #CFF8DD; font-size: 15px; }
+
+/* Toast */
+.toast { position: fixed; left: 50%; bottom: 96px; transform: translate(-50%, 20px); background: #121A14; border: 1px solid var(--green-2); color: var(--text); padding: 12px 20px; border-radius: 14px; opacity: 0; pointer-events: none; transition: all .2s; z-index: 50; white-space: nowrap; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+@media (min-width: 760px) {
+  .prod-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .trust-grid { grid-template-columns: repeat(4, 1fr); }
+  .foot-cols { grid-template-columns: repeat(3, 1fr); }
+  .pdp { grid-template-columns: 1.1fr 1fr; gap: 40px; }
+  .cart-layout { display: grid; grid-template-columns: 1.6fr 1fr; gap: 32px; align-items: start; }
+  .hero-inner { padding: 80px 16px 60px; }
+}
+@media (min-width: 1000px) {
+  body { padding-bottom: 0; }
+  .bottom-nav { display: none; }
+  .desk-nav { display: flex; }
+  .prod-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .cat-grid { grid-template-columns: repeat(4, 1fr); }
+  .cat-card.wide { aspect-ratio: auto; }
+}
+</style>
+</head>
+<body>
+  <div class="ticker" aria-label="Store announcements"><div class="ticker-track" id="ticker"></div></div>
+
+  <header class="topbar">
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a href="#/" class="brand" aria-label="E Plugg home"><span class="brand-mark"></span><span class="brand-word"><b>E</b>PLUGG</span></a>
+    <nav class="desk-nav" id="deskNav"></nav>
+    <div class="topbar-right">
+      <a href="#/account" class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      </a>
+      <a href="#/cart" class="cart-pill" aria-label="Cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 12a3 3 0 0 0 6 0"/></svg>
+        <span id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer" aria-label="Menu"></aside>
+
+  <main id="app"></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg><span>HOME</span></a>
+    <a href="#/shop" data-tab="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>SHOP</span></a>
+    <a href="#/cart" data-tab="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>CART</span></a>
+    <a href="#/account" data-tab="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span>ACCOUNT</span></a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Hidden form so Netlify Forms detects the newsletter + contact forms at deploy time -->
+  <form name="newsletter" netlify netlify-honeypot="bot-field" hidden><input name="email"><input name="bot-field"></form>
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden><input name="name"><input name="email"><input name="order"><textarea name="message"></textarea><input name="bot-field"></form>
+
+  <script>/* E Plugg storefront — no framework, no build step.
+   Products live in data/products.json, categories in data/categories.json.
+   Edit STORE below for contact info, promo codes, shipping and stats. */
+
+const STORE = {
+  name: "E Plugg",
+  // Leave a value empty ("") to hide it from the footer and contact page.
+  email: "",
+  phone: "",
+  address: "",
+  socials: { instagram: "", x: "", youtube: "", tiktok: "" },
+  freeShippingOver: 150,
+  flatShipping: 9.99, // charged under the free-shipping threshold — set your real rate
+  promoCodes: { PLUGGSTUDENT: 0.10 }, // must match netlify/functions/checkout.js
+  heroStats: [["7", "CATEGORIES"], ["30-DAY", "RETURNS"], ["$150+", "SHIPS FREE"]],
+  heroImage: "https://images.unsplash.com/photo-1594054763281-0946baaad462?crop=entropy&cs=srgb&fm=jpg&q=70&w=1600",
+  trailImage: "https://images.unsplash.com/photo-1624243519828-52a0f2c88af3?crop=entropy&cs=srgb&fm=jpg&q=80&w=1400",
+  checkoutEndpoint: "/.netlify/functions/checkout",
+  // Affiliate tracking links, one per brand. Paste the brand's tracking link from Impact / AvantLink / Awin.
+  // While a brand's link is empty, that brand's products stay hidden from the store.
+  affiliates: {
+    hiboy: "https://www.hiboy.com/",
+  },
+};
+
+/* Builds a product-level affiliate link from a brand tracking link (Impact, Awin, AvantLink, or a plain URL). */
+function affiliateLink(base, productUrl) {
+  if (!base) return "";
+  try {
+    const u = new URL(base);
+    if (/awin1\.com$/.test(u.hostname)) u.searchParams.set("ued", productUrl);
+    else if (/avantlink\.com$/.test(u.hostname)) u.searchParams.set("url", productUrl);
+    else if (/(sjv\.io|pxf\.io|pntrs\.com|pntra\.com|pntrac\.com|evyy\.net|ojrq\.net|7eer\.net|r2ld\.net|ftjcfx\.com|impact|\.io$)/.test(u.hostname)) u.searchParams.set("u", productUrl);
+    else return base; // unknown format: use the link exactly as given
+    return u.toString();
+  } catch { return ""; }
+}
+
+const TICKER = [
+  "⚡ NOW SHIPPING ACROSS THE CONTIGUOUS US",
+  `FREE SHIPPING OVER $${STORE.freeShippingOver}`,
+  "STUDENTS SAVE 10% WITH CODE PLUGGSTUDENT",
+];
+
+const state = { products: [], categories: [], loaded: false };
+const $ = (s, el = document) => el.querySelector(s);
+const app = $("#app");
+
+/* ---------- utils ---------- */
+const esc = (s = "") => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const money = n => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2200);
+}
+const ICON = {
+  arrow: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  bolt: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>',
+  truck: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>',
+  undo: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 1 0 2.5-5.8M4 4v5h5"/></svg>',
+  shield: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+  support: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7H5v10h2M17 7h2v10h-2M21 10v4"/><path d="M13 7l-3 5h4l-3 5"/></svg>',
+  phone: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>',
+  mail: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+  pin: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>',
+  instagram: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
+  x: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg>',
+  youtube: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.6 7.2a2.7 2.7 0 0 0-1.9-1.9C18 5 12 5 12 5s-6 0-7.7.4A2.7 2.7 0 0 0 2.4 7.2 28 28 0 0 0 2 12a28 28 0 0 0 .4 4.8 2.7 2.7 0 0 0 1.9 1.9C6 19 12 19 12 19s6 0 7.7-.4a2.7 2.7 0 0 0 1.9-1.9A28 28 0 0 0 22 12a28 28 0 0 0-.4-4.8zM10 15V9l5 3z"/></svg>',
+  tiktok: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M16 3c.4 2.3 1.8 3.8 4 4v3c-1.5 0-2.9-.4-4-1.2V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3z"/></svg>',
+};
+
+/* ---------- cart ---------- */
+const cart = {
+  items() { return store.get("eplugg_cart", []); },
+  save(items) { store.set("eplugg_cart", items); updateCartCount(); },
+  add(id, qty = 1) {
+    const items = this.items(); const line = items.find(i => i.id === id);
+    if (line) line.qty += qty; else items.push({ id, qty });
+    this.save(items);
+  },
+  setQty(id, qty) { this.save(this.items().map(i => i.id === id ? { ...i, qty } : i).filter(i => i.qty > 0)); },
+  clear() { this.save([]); },
+  lines() {
+    return this.items().map(i => ({ ...i, product: state.products.find(p => p.id === i.id) })).filter(l => l.product);
+  },
+};
+function updateCartCount() {
+  const n = cart.items().reduce((a, i) => a + i.qty, 0);
+  $("#cartCount").textContent = n;
+}
+function totals(promoCode) {
+  const lines = cart.lines();
+  const subtotal = lines.reduce((a, l) => a + l.product.price * l.qty, 0);
+  const rate = STORE.promoCodes[(promoCode || "").toUpperCase()] || 0;
+  const discount = Math.round(subtotal * rate * 100) / 100;
+  const after = subtotal - discount;
+  const shipping = lines.length === 0 ? 0 : (after >= STORE.freeShippingOver ? 0 : STORE.flatShipping);
+  return { lines, subtotal, discount, shipping, total: after + shipping };
+}
+
+/* ---------- shared pieces ---------- */
+const catBySlug = slug => state.categories.find(c => c.slug === slug);
+const countIn = slug => state.products.filter(p => p.category === slug).length;
+
+function emptyState(title = "New gear is charging up.", body = "Our catalog is being stocked by approved U.S. suppliers — check back soon.") {
+  return `<div class="empty"><h3>${esc(title)}</h3><p>${esc(body)}</p></div>`;
+}
+function productCard(p) {
+  const img = (p.images && p.images[0]) || "";
+  const off = p.compare_at_price > p.price ? Math.round((1 - p.price / p.compare_at_price) * 100) : 0;
+  return `<a class="prod-card" href="#/product/${esc(p.slug)}">
+    <div class="thumb">${img ? `<img src="${esc(img)}" alt="${esc(p.name)}" loading="lazy">` : ""}${off ? `<span class="badge">-${off}%</span>` : p.new ? `<span class="badge">NEW</span>` : ""}</div>
+    <div class="info"><span class="brand-line">${esc(p.brand || "")}</span><span class="name">${esc(p.name)}</span>
+    <span class="price">${money(p.price)}${off ? `<s>${money(p.compare_at_price)}</s>` : ""}</span></div></a>`;
+}
+function productGrid(list) {
+  return list.length ? `<div class="prod-grid">${list.map(productCard).join("")}</div>` : emptyState();
+}
+function sectionHead(eyebrow, title, href) {
+  return `<div class="section-head"><div><p class="eyebrow">${eyebrow}</p><h2>${title}</h2></div>${href ? `<a class="view-all" href="${href}">View all ${ICON.arrow}</a>` : ""}</div>`;
+}
+function catCard(c, i) {
+  const wide = i === 0 || i === 4;
+  return `<a class="cat-card${wide ? " wide" : ""}" href="#/category/${c.slug}">
+    <img src="${esc(c.image)}" alt="" loading="lazy">
+    <div class="cat-label"><div class="count">${countIn(c.slug)} PRODUCT${countIn(c.slug) === 1 ? "" : "S"}</div><h3>${esc(c.name)}</h3></div></a>`;
+}
+
+/* ---------- pages ---------- */
+function pageHome() {
+  const P = state.products;
+  const featured = P.filter(p => p.featured).slice(0, 8);
+  const deals = P.filter(p => p.deal || p.compare_at_price > p.price).slice(0, 8);
+  const best = P.filter(p => p.best_seller).slice(0, 8);
+  const fresh = P.filter(p => p.new).slice(0, 8);
+  return `
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('${esc(STORE.heroImage)}')"></div>
+    <div class="hero-inner wrap">
+      <div class="hero-logo"><span class="brand-mark"></span><span class="brand-word"><b>E</b>PLUGG</span></div>
+      <span class="pill-tag">THE ELECTRIC SUPERSTORE</span>
+      <h1>Plug into the future of <span class="green">how you move.</span></h1>
+      <p class="lead">Performance scooters, e-bikes, parts and the latest electronics — shipped across the contiguous US.</p>
+      <div class="hero-ctas"><a class="btn btn-green" href="#/shop">Shop now ${ICON.arrow}</a><a class="btn btn-ghost" href="#/shop?deals=1">Today’s deals</a></div>
+      <div class="hero-stats">${STORE.heroStats.map(([b, s]) => `<div><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join("")}</div>
+    </div>
+  </section>
+  <section class="trust"><div class="wrap trust-grid">
+    <div class="trust-item"><div class="trust-icon">${ICON.truck}</div><div><b>Free shipping</b><small>On orders over $${STORE.freeShippingOver}</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.undo}</div><div><b>30-day returns</b><small>Hassle-free refunds</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.shield}</div><div><b>Secure checkout</b><small>Ships across the contiguous US</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.support}</div><div><b>Expert support</b><small>Riders helping riders</small></div></div>
+  </div></section>
+  <section class="section wrap">${sectionHead("Browse", "Shop by category", "#/shop")}
+    <div class="cat-grid">${state.categories.map(catCard).join("")}</div></section>
+  <section class="section wrap">${sectionHead("Hand-picked", "Featured gear", "#/shop")}${productGrid(featured)}</section>
+  <section class="section wrap"><div class="deals">
+    <p class="eyebrow" style="display:flex;gap:10px;align-items:center">${ICON.bolt} Flash deals</p>
+    <h2>Trending deals end tonight</h2>
+    <div class="countdown"><span class="box" id="cdH">00</span><span class="sep">:</span><span class="box" id="cdM">00</span><span class="sep">:</span><span class="box" id="cdS">00</span><a href="#/shop?deals=1">All deals →</a></div>
+    ${productGrid(deals)}
+  </div></section>
+  <section class="section wrap">${sectionHead("Most loved", "Best sellers", "#/shop")}${productGrid(best)}</section>
+  <section class="section wrap"><div class="banner"><img src="${esc(STORE.trailImage)}" alt="" loading="lazy">
+    <div class="banner-body"><p class="eyebrow">Trail season</p><h2>E-bikes built to climb anything.</h2><a class="btn btn-green" href="#/category/electric-bikes">Shop e-bikes</a></div></div></section>
+  <section class="section wrap"><div class="promo">
+    <svg class="promo-bolt" viewBox="0 0 24 24" fill="none" stroke="#04150A" stroke-width="2.2" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+    <p class="eyebrow">Students &amp; commuters</p><h2>Save 10% on your first ride.</h2>
+    <div class="promo-row"><button class="code-chip" data-copy="PLUGGSTUDENT">PLUGGSTUDENT</button><a class="btn btn-dark" href="#/shop">Shop now</a></div>
+  </div></section>
+  <section class="section wrap">${sectionHead("Just landed", "New arrivals", "#/shop?sort=new")}${productGrid(fresh)}</section>`;
+}
+
+function pageShop(params, fixedCat) {
+  const cat = fixedCat || params.get("cat") || "";
+  const q = (params.get("q") || "").trim().toLowerCase();
+  const sort = params.get("sort") || "featured";
+  const dealsOnly = params.get("deals") === "1";
+  let list = state.products.filter(p =>
+    (!cat || p.category === cat) &&
+    (!dealsOnly || p.deal || p.compare_at_price > p.price) &&
+    (!q || [p.name, p.brand, p.short].join(" ").toLowerCase().includes(q)));
+  const sorters = {
+    featured: (a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0),
+    new: (a, b) => (b.new ? 1 : 0) - (a.new ? 1 : 0),
+    "price-asc": (a, b) => a.price - b.price,
+    "price-desc": (a, b) => b.price - a.price,
+  };
+  list = [...list].sort(sorters[sort] || sorters.featured);
+  const c = catBySlug(cat);
+  const base = fixedCat ? `#/category/${fixedCat}` : "#/shop";
+  const link = (over) => {
+    const p = new URLSearchParams(params); Object.entries(over).forEach(([k, v]) => v ? p.set(k, v) : p.delete(k));
+    if (fixedCat) p.delete("cat"); const s = p.toString(); return base + (s ? "?" + s : "");
+  };
+  return `<div class="wrap">
+    <div class="page-head"><p class="eyebrow">${dealsOnly ? "Flash deals" : c ? "Category" : "Shop"}</p>
+      <h1>${dealsOnly ? "Today’s deals" : c ? esc(c.name) : "All products"}</h1>${c ? `<p class="muted">${esc(c.description)}</p>` : ""}</div>
+    <div class="filters">
+      <a class="chip ${!cat ? "on" : ""}" href="${fixedCat ? "#/shop" : link({ cat: "" })}">All</a>
+      ${state.categories.map(x => `<a class="chip ${x.slug === cat ? "on" : ""}" href="#/category/${x.slug}">${esc(x.name)}</a>`).join("")}
+      <a class="chip ${dealsOnly ? "on" : ""}" href="${link({ deals: dealsOnly ? "" : "1" })}">Deals</a>
+    </div>
+    <form class="toolbar" id="shopForm">
+      <input class="field search" name="q" type="search" placeholder="Search products" value="${esc(params.get("q") || "")}">
+      <select class="field" name="sort" aria-label="Sort">
+        ${[["featured", "Featured"], ["new", "Newest"], ["price-asc", "Price: low to high"], ["price-desc", "Price: high to low"]]
+          .map(([v, l]) => `<option value="${v}" ${v === sort ? "selected" : ""}>${l}</option>`).join("")}
+      </select>
+    </form>
+    <p class="muted" style="margin:0 0 14px">${list.length} product${list.length === 1 ? "" : "s"}</p>
+    ${productGrid(list)}
+  </div>`;
+}
+
+function pageProduct(slug) {
+  const p = state.products.find(x => x.slug === slug || x.id === slug);
+  if (!p) return pageNotFound();
+  const c = catBySlug(p.category);
+  const imgs = p.images && p.images.length ? p.images : [];
+  const off = p.compare_at_price > p.price;
+  const out = p.stock === 0;
+  const related = state.products.filter(x => x.category === p.category && x.id !== p.id).slice(0, 4);
+  return `<div class="wrap">
+    <div class="crumbs"><a href="#/shop">Shop</a>${c ? ` / <a href="#/category/${c.slug}">${esc(c.name)}</a>` : ""}</div>
+    <div class="pdp">
+      <div>
+        <div class="gallery-main">${imgs[0] ? `<img id="mainImg" src="${esc(imgs[0])}" alt="${esc(p.name)}">` : ""}</div>
+        ${imgs.length > 1 ? `<div class="thumbs">${imgs.map((src, i) => `<button class="${i ? "" : "on"}" data-img="${esc(src)}"><img src="${esc(src)}" alt=""></button>`).join("")}</div>` : ""}
+      </div>
+      <div>
+        <p class="eyebrow">${esc(p.brand || "")}</p>
+        <h1>${esc(p.name)}</h1>
+        <div class="price">${money(p.price)}${off ? `<s>${money(p.compare_at_price)}</s>` : ""}</div>
+        ${p.short ? `<p class="muted" style="font-size:18px">${esc(p.short)}</p>` : ""}
+        <p class="muted" style="font-size:15px">${p.partner_url ? `Sold and shipped by ${esc(p.brand || "our partner")}` : out ? "Out of stock" : p.price >= STORE.freeShippingOver ? "Ships free to the contiguous US" : `Free shipping on orders over $${STORE.freeShippingOver}`}</p>
+        ${p.partner_url ? `
+          <a class="btn btn-green btn-block" href="${esc(p.partner_url)}" target="_blank" rel="noopener sponsored">Buy at ${esc(p.brand || "partner")} ${ICON.arrow}</a>
+          <p class="muted" style="font-size:13px">Price shown is ${esc(p.brand || "the partner")}'s price${p.price_checked ? ` as of ${new Date(p.price_checked + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}` : ""} and may change. Sold by a partner retailer; E Plugg may earn a commission.</p>` : `
+          <div style="display:flex;gap:12px;align-items:center;margin:18px 0">
+            <div class="qty"><button data-q="-1" aria-label="Less">−</button><span id="qty">1</span><button data-q="1" aria-label="More">+</button></div>
+            <button class="btn btn-green" style="flex:1" id="addBtn" data-id="${esc(p.id)}" ${out ? "disabled" : ""}>${out ? "Sold out" : "Add to cart"}</button>
+          </div>`}
+        ${p.description ? `<div class="prose" style="padding:10px 0">${esc(p.description).split(/\n\s*\n/).map(t => `<p>${t}</p>`).join("")}</div>` : ""}
+        ${p.specs && Object.keys(p.specs).length ? `<h3 style="margin-top:12px">Specs</h3><table class="specs">${Object.entries(p.specs).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join("")}</table>` : ""}
+      </div>
+    </div>
+    ${related.length ? `<section class="section">${sectionHead("You might like", "More like this")}${productGrid(related)}</section>` : ""}
+  </div>`;
+}
+
+function pageCart() {
+  const promo = store.get("eplugg_promo", "");
+  const t = totals(promo);
+  if (!t.lines.length) return `<div class="wrap"><div class="page-head"><h1>Your cart</h1></div>${emptyState("Your cart is empty.", "Find something electric to plug into.")}<p style="margin-top:20px"><a class="btn btn-green" href="#/shop">Shop now</a></p></div>`;
+  const toFree = STORE.freeShippingOver - (t.subtotal - t.discount);
+  return `<div class="wrap"><div class="page-head"><h1>Your cart</h1></div>
+  <div class="cart-layout"><div>
+    ${t.lines.map(l => `<div class="cart-line">
+      ${l.product.images && l.product.images[0] ? `<img src="${esc(l.product.images[0])}" alt="">` : `<div style="width:84px;height:84px;border-radius:14px;background:#0A0E15"></div>`}
+      <div><a href="#/product/${esc(l.product.slug)}" style="font-weight:600">${esc(l.product.name)}</a>
+        <div class="price" style="font-size:15px">${money(l.product.price)}</div>
+        <div style="display:flex;gap:12px;align-items:center;margin-top:8px">
+          <div class="qty"><button data-line="${esc(l.id)}" data-d="-1" aria-label="Less">−</button><span>${l.qty}</span><button data-line="${esc(l.id)}" data-d="1" aria-label="More">+</button></div>
+          <button class="link-btn" data-remove="${esc(l.id)}">Remove</button></div></div>
+      <div class="price">${money(l.product.price * l.qty)}</div></div>`).join("")}
+  </div>
+  <div class="summary" style="margin-top:20px">
+    <form class="promo-input" id="promoForm"><input class="field" name="code" placeholder="Promo code" value="${esc(promo)}"><button class="btn btn-ghost" style="padding:10px 16px;font-size:16px">Apply</button></form>
+    <div class="row"><span class="muted">Subtotal</span><span>${money(t.subtotal)}</span></div>
+    ${t.discount ? `<div class="row green"><span>Discount (${esc(promo.toUpperCase())})</span><span>−${money(t.discount)}</span></div>` : ""}
+    <div class="row"><span class="muted">Shipping</span><span>${t.shipping ? money(t.shipping) : "Free"}</span></div>
+    ${toFree > 0 ? `<p class="muted" style="margin:0;font-size:14px">Add ${money(toFree)} more for free shipping.</p>` : ""}
+    <div class="row total"><span>Total</span><span>${money(t.total)}</span></div>
+    <button class="btn btn-green btn-block" id="checkoutBtn">Secure checkout ${ICON.arrow}</button>
+    <p class="muted" style="margin:0;font-size:13px;text-align:center">Payments processed by Stripe. Shipping to the contiguous US only.</p>
+  </div></div></div>`;
+}
+
+function pageSuccess() {
+  cart.clear(); store.set("eplugg_promo", "");
+  return `<div class="wrap prose"><p class="eyebrow">Order placed</p><h1>You’re plugged in. ⚡</h1>
+    <p>Thanks for your order. A receipt is on its way to your email, and we’ll send tracking as soon as it ships.</p>
+    <p><a href="#/shop">Keep shopping</a></p></div>`;
+}
+
+function pageAccount() {
+  return `<div class="wrap prose"><p class="eyebrow">Account</p><h1>Your account</h1>
+    <div class="notice">Customer accounts are coming soon. You can check out as a guest — your receipt and tracking arrive by email.</div>
+    <h2>Need something?</h2>
+    <ul><li><a href="#/page/track">Track your order</a></li><li><a href="#/page/returns">Start a return</a></li><li><a href="#/page/contact">Contact support</a></li></ul></div>`;
+}
+
+function contactBlock() {
+  return [
+    STORE.phone && `<div>${ICON.phone}<a href="tel:${esc(STORE.phone.replace(/[^+\d]/g, ""))}">${esc(STORE.phone)}</a></div>`,
+    STORE.email && `<div>${ICON.mail}<a href="mailto:${esc(STORE.email)}">${esc(STORE.email)}</a></div>`,
+    STORE.address && `<div>${ICON.pin}<span>${esc(STORE.address)}</span></div>`,
+  ].filter(Boolean).join("");
+}
+
+const PAGES = {
+  contact: () => `<p class="eyebrow">Support</p><h1>Contact us</h1>
+    <p>Questions about an order, a product or a return? Send us a message and we’ll get back to you within one business day.</p>
+    ${contactBlock() ? `<div class="contact-lines">${contactBlock()}</div>` : ""}
+    <form class="form-grid" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+      <input type="hidden" name="form-name" value="contact"><p hidden><input name="bot-field"></p>
+      <label>Name<input class="field" name="name" required></label>
+      <label>Email<input class="field" type="email" name="email" required></label>
+      <label>Order number (optional)<input class="field" name="order"></label>
+      <label>Message<textarea class="field" name="message" rows="5" required></textarea></label>
+      <button class="btn btn-green">Send message</button></form>`,
+  faqs: () => `<p class="eyebrow">Support</p><h1>FAQs</h1><div class="faq">
+    ${[
+      ["Where do you ship?", "We ship to all addresses in the contiguous United States. We don’t currently ship to Alaska, Hawaii, U.S. territories or internationally."],
+      ["How much is shipping?", `Shipping is free on orders over $${STORE.freeShippingOver}. Smaller orders ship at a flat rate shown in your cart before you pay.`],
+      ["How long does delivery take?", "Most in-stock items ship within 1–3 business days. Large items like e-bikes may ship by freight and take a few extra days."],
+      ["What’s your return policy?", "Unused items in original packaging can be returned within 30 days of delivery. See our Returns & refunds page for details."],
+      ["How do I use the student discount?", "Enter PLUGGSTUDENT in the promo code box in your cart to save 10%."],
+      ["Are some products sold by partners?", "Yes. Some listings link to partner retailers, who handle that order directly. Those pages are clearly marked."],
+    ].map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join("")}</div>`,
+  shipping: () => `<p class="eyebrow">Support</p><h1>Shipping information</h1>
+    <p>We ship to the contiguous United States (the lower 48 states and Washington, D.C.).</p>
+    <h2>Rates</h2><p>Free standard shipping on orders over $${STORE.freeShippingOver}. Orders under that ship for a flat ${money(STORE.flatShipping)}.</p>
+    <h2>Processing</h2><p>In-stock orders usually leave our suppliers within 1–3 business days. You’ll get tracking by email when your order ships.</p>
+    <h2>Large items</h2><p>E-bikes and scooters may ship by freight. Inspect the box on delivery and note any visible damage with the carrier.</p>`,
+  returns: () => `<p class="eyebrow">Support</p><h1>Returns &amp; refunds</h1>
+    <p>You can return most items within 30 days of delivery if they’re unused and in their original packaging.</p>
+    <h2>How to start a return</h2><p>Use the <a href="#/page/contact">contact form</a> with your order number and the reason for your return. We’ll reply with instructions.</p>
+    <h2>Refunds</h2><p>Once your return is received and inspected, we refund your original payment method. Refunds usually post within 5–10 business days.</p>
+    <h2>Exceptions</h2><p>Items that have been ridden, damaged, or are missing parts may not be eligible. Items bought from partner retailers follow that retailer’s policy.</p>`,
+  warranty: () => `<p class="eyebrow">Support</p><h1>Warranty</h1>
+    <p>Products are covered by their manufacturer’s warranty. Warranty length and coverage are listed on each product page where available.</p>
+    <p>To make a claim, <a href="#/page/contact">contact us</a> with your order number, a description of the issue, and photos or video. We’ll help you work with the manufacturer.</p>`,
+  track: () => `<p class="eyebrow">Support</p><h1>Track your order</h1>
+    <p>When your order ships you’ll get an email with a tracking link from the carrier. That link is the fastest way to see where your package is.</p>
+    <p>Can’t find it? <a href="#/page/contact">Contact us</a> with your order number and we’ll look it up.</p>`,
+  about: () => `<p class="eyebrow">Company</p><h1>About E Plugg</h1>
+    <p>E Plugg is an online store for electric scooters, e-bikes, mobility accessories, electronics and gadgets, shipping across the contiguous United States.</p>
+    <p>We work with approved U.S. suppliers and partner retailers to bring next-gen electronics and high-performance electric mobility to riders, students and commuters.</p>`,
+  privacy: () => `<p class="eyebrow">Company</p><h1>Privacy policy</h1>
+    <p><em>Template — have this reviewed before launch.</em></p>
+    <h2>What we collect</h2><p>When you place an order or contact us, we collect your name, email, shipping address and order details. Payments are processed by Stripe; we never see or store your full card number.</p>
+    <h2>How we use it</h2><p>To fulfill orders, send receipts and tracking, answer your questions, and, if you sign up, send our newsletter. You can unsubscribe at any time.</p>
+    <h2>Sharing</h2><p>We share only what’s needed with suppliers, shipping carriers and payment processors to complete your order. We don’t sell your personal information.</p>
+    <h2>Your rights</h2><p>California residents and others may request access to or deletion of their data by contacting us.</p>`,
+  terms: () => `<p class="eyebrow">Company</p><h1>Terms &amp; conditions</h1>
+    <p><em>Template — have this reviewed before launch.</em></p>
+    <h2>Orders</h2><p>All prices are in U.S. dollars. We may cancel an order if an item is unavailable or priced incorrectly, and we’ll refund any payment in full.</p>
+    <h2>Shipping</h2><p>We ship only to the contiguous United States. Risk of loss passes to you on delivery.</p>
+    <h2>Partner products</h2><p>Some products are sold by partner retailers. Those purchases are governed by the partner’s terms, and we may earn a commission.</p>
+    <h2>Safety</h2><p>Electric scooters and e-bikes can be dangerous. Always wear a helmet, follow local laws and the manufacturer’s instructions.</p>`,
+};
+function pageInfo(name) {
+  const fn = PAGES[name]; if (!fn) return pageNotFound();
+  return `<div class="wrap prose">${fn()}</div>`;
+}
+function pageNotFound() {
+  return `<div class="wrap">${emptyState("That page is unplugged.", "We couldn’t find what you were looking for.")}<p style="margin-top:20px"><a class="btn btn-green" href="#/">Back home</a></p></div>`;
+}
+
+/* ---------- chrome: ticker, drawer, footer ---------- */
+function renderChrome() {
+  const run = `<span>${TICKER.map(t => `<span>${esc(t)}</span><span>·</span>`).join("")}</span>`;
+  $("#ticker").innerHTML = run + run;
+  const catLinks = state.categories.map(c => `<a href="#/category/${c.slug}">${esc(c.name)}</a>`).join("");
+  $("#deskNav").innerHTML = `<a href="#/shop">Shop</a><a href="#/category/electric-scooters">Scooters</a><a href="#/category/electric-bikes">E-Bikes</a><a href="#/category/electronics">Electronics</a><a href="#/shop?deals=1">Deals</a>`;
+  $("#drawer").innerHTML = `<a href="#/" class="brand" style="padding:0"><span class="brand-mark"></span><span class="brand-word"><b>E</b>PLUGG</span></a>
+    <h4 class="eyebrow">Shop</h4><a href="#/shop">All products</a>${catLinks}<a href="#/shop?deals=1">Deals</a>
+    <h4 class="eyebrow">Help</h4><a href="#/page/contact">Contact us</a><a href="#/page/faqs">FAQs</a><a href="#/page/shipping">Shipping</a><a href="#/page/returns">Returns</a>`;
+  const socials = Object.entries(STORE.socials).filter(([, url]) => url)
+    .map(([k, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener" aria-label="${k}">${ICON[k]}</a>`).join("");
+  $("#footer").innerHTML = `<div class="wrap">
+    <a href="#/" class="brand" style="gap:14px"><span class="brand-mark"></span><span class="brand-word"><b>E</b>PLUGG</span></a>
+    <p class="tagline">Next-gen electronics &amp; high-performance electric mobility</p>
+    <form class="news" id="newsForm" name="newsletter" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="newsletter">
+      <input type="email" name="email" required placeholder="Email for drops &amp; deals" aria-label="Email">
+      <button class="btn btn-green">Join</button></form>
+    ${socials ? `<div class="socials">${socials}</div>` : ""}
+    <div class="foot-cols">
+      <div class="foot-col"><h4>SHOP</h4><a href="#/shop">All products</a>${catLinks}<a href="#/shop?deals=1">Deals</a></div>
+      <div class="foot-col"><h4>SUPPORT</h4><a href="#/page/contact">Contact us</a><a href="#/page/faqs">FAQs</a><a href="#/page/shipping">Shipping information</a><a href="#/page/returns">Returns &amp; refunds</a><a href="#/page/warranty">Warranty</a><a href="#/page/track">Track your order</a></div>
+      <div class="foot-col"><h4>COMPANY</h4><a href="#/page/about">About us</a><a href="#/page/privacy">Privacy policy</a><a href="#/page/terms">Terms &amp; conditions</a></div>
+    </div>
+    ${contactBlock() ? `<div class="contact-lines">${contactBlock()}</div>` : `<div style="height:30px"></div>`}
+    <div class="legal">© ${new Date().getFullYear()} E Plugg. All prices in USD · Shipping to the contiguous United States. Some products are sold by partner retailers; we may earn a commission.
+      <div class="pay-badges"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>G PAY</span><span class="stripe">STRIPE SECURE</span></div></div>
+  </div>`;
+}
+function toggleDrawer(open) {
+  $("#drawer").classList.toggle("open", open);
+  $("#drawerBackdrop").classList.toggle("open", open);
+}
+
+/* ---------- countdown to local midnight ---------- */
+function tickCountdown() {
+  const h = $("#cdH"); if (!h) return;
+  const now = new Date(), end = new Date(now); end.setHours(24, 0, 0, 0);
+  let s = Math.max(0, Math.floor((end - now) / 1000));
+  const pad = n => String(n).padStart(2, "0");
+  h.textContent = pad(Math.floor(s / 3600)); $("#cdM").textContent = pad(Math.floor(s % 3600 / 60)); $("#cdS").textContent = pad(s % 60);
+}
+setInterval(tickCountdown, 1000);
+
+/* ---------- router ---------- */
+function route() {
+  toggleDrawer(false);
+  const hash = location.hash.replace(/^#/, "") || "/";
+  const [path, query] = hash.split("?");
+  const params = new URLSearchParams(query || "");
+  const parts = path.split("/").filter(Boolean);
+  let html, tab = "";
+  if (!state.loaded) html = `<div class="wrap muted" style="padding:60px 16px">Loading…</div>`;
+  else if (!parts.length) { html = pageHome(); tab = "home"; }
+  else if (parts[0] === "shop") { html = pageShop(params); tab = "shop"; }
+  else if (parts[0] === "category") { html = catBySlug(parts[1]) ? pageShop(params, parts[1]) : pageNotFound(); tab = "shop"; }
+  else if (parts[0] === "product") { html = pageProduct(decodeURIComponent(parts[1] || "")); tab = "shop"; }
+  else if (parts[0] === "cart") { html = pageCart(); tab = "cart"; }
+  else if (parts[0] === "success") html = pageSuccess();
+  else if (parts[0] === "account") { html = pageAccount(); tab = "account"; }
+  else if (parts[0] === "page") html = pageInfo(parts[1]);
+  else html = pageNotFound();
+  app.innerHTML = html;
+  document.querySelectorAll("#bottomNav a").forEach(a => a.classList.toggle("active", a.dataset.tab === tab));
+  tickCountdown();
+  if (!hash.includes("?") || parts[0] !== "shop") window.scrollTo(0, 0);
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", async e => {
+  const t = e.target.closest("button, a"); if (!t) return;
+  if (t.id === "menuBtn") return toggleDrawer(true);
+  if (t.dataset.copy) {
+    try { await navigator.clipboard.writeText(t.dataset.copy); toast("Code copied — apply it in your cart"); } catch { toast("Use code " + t.dataset.copy + " in your cart"); }
+    store.set("eplugg_promo", t.dataset.copy); return;
+  }
+  if (t.dataset.img) { $("#mainImg").src = t.dataset.img; document.querySelectorAll(".thumbs button").forEach(b => b.classList.toggle("on", b === t)); return; }
+  if (t.dataset.q) { const el = $("#qty"); el.textContent = Math.max(1, Math.min(10, +el.textContent + +t.dataset.q)); return; }
+  if (t.id === "addBtn") { cart.add(t.dataset.id, +$("#qty").textContent); toast("Added to cart"); return; }
+  if (t.dataset.line) {
+    const line = cart.items().find(i => i.id === t.dataset.line);
+    if (line) cart.setQty(line.id, Math.min(10, line.qty + +t.dataset.d)); return route();
+  }
+  if (t.dataset.remove) { cart.setQty(t.dataset.remove, 0); return route(); }
+  if (t.id === "checkoutBtn") return startCheckout(t);
+});
+$("#drawerBackdrop").addEventListener("click", () => toggleDrawer(false));
+
+document.addEventListener("submit", async e => {
+  const f = e.target;
+  if (f.id === "promoForm") {
+    e.preventDefault(); const code = f.code.value.trim().toUpperCase();
+    if (!code) { store.set("eplugg_promo", ""); return route(); }
+    if (STORE.promoCodes[code]) { store.set("eplugg_promo", code); toast("Promo applied"); } else toast("That code isn’t valid");
+    return route();
+  }
+  if (f.id === "shopForm") {
+    e.preventDefault();
+    const [path, query] = location.hash.slice(1).split("?"); const p = new URLSearchParams(query || "");
+    f.q.value ? p.set("q", f.q.value) : p.delete("q"); p.set("sort", f.sort.value);
+    location.hash = path + "?" + p.toString(); return;
+  }
+  if (f.id === "newsForm" || f.id === "contactForm") {
+    e.preventDefault();
+    try {
+      const res = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(f)).toString() });
+      if (!res.ok) throw new Error();
+      f.reset(); toast(f.id === "newsForm" ? "You’re on the list ⚡" : "Message sent — we’ll be in touch");
+    } catch { toast("Couldn’t send right now — please try again"); }
+  }
+});
+document.addEventListener("change", e => { if (e.target.form && e.target.form.id === "shopForm") e.target.form.requestSubmit(); });
+
+async function startCheckout(btn) {
+  btn.disabled = true; btn.textContent = "Starting checkout…";
+  try {
+    const res = await fetch(STORE.checkoutEndpoint, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ items: cart.items(), promo: store.get("eplugg_promo", "") }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.url) throw new Error(data.error || "Checkout isn’t available yet.");
+    location.href = data.url;
+  } catch (err) {
+    toast(err.message || "Checkout isn’t available yet."); btn.disabled = false; btn.innerHTML = "Secure checkout " + ICON.arrow;
+  }
+}
+
+/* ---------- boot ---------- */
+window.addEventListener("hashchange", route);
+(async function boot() {
+  route();
+  try {
+    const [cats, prods] = await Promise.all([
+      Promise.resolve([
+  {
+    "slug": "electric-scooters",
+    "name": "Electric Scooters",
+    "description": "Commuter to hyper-performance scooters, up to 55 MPH.",
+    "image": "https://images.unsplash.com/photo-1594054763281-0946baaad462?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "electric-bikes",
+    "name": "Electric Bikes",
+    "description": "Fat tire, mountain and cargo electric bikes.",
+    "image": "https://images.unsplash.com/photo-1624243519828-52a0f2c88af3?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "folding-e-bikes",
+    "name": "Folding E-Bikes",
+    "description": "Compact e-bikes that fold for trains, trunks and apartments.",
+    "image": "https://images.pexels.com/photos/6502400/pexels-photo-6502400.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "slug": "commuter-e-bikes",
+    "name": "Commuter E-Bikes",
+    "description": "Upright, comfortable e-bikes built for the daily ride.",
+    "image": "https://images.unsplash.com/photo-1620802051782-725fa33db067?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "mobility-accessories",
+    "name": "Electric Mobility Accessories",
+    "description": "Batteries, chargers, brakes, tires, helmets and locks.",
+    "image": "https://images.pexels.com/photos/8811560/pexels-photo-8811560.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  {
+    "slug": "electronics",
+    "name": "Electronics",
+    "description": "Laptops, tablets, TVs and smart home.",
+    "image": "https://images.unsplash.com/photo-1426024084828-5da21e13f5dc?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  },
+  {
+    "slug": "gadgets",
+    "name": "Gadgets",
+    "description": "Headphones, wearables, chargers and everyday tech.",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+  }
+]
+),
+      Promise.resolve([
+ {
+  "id": "hiboy-s2",
+  "slug": "hiboy-s2",
+  "name": "Hiboy S2 Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 299.99,
+  "compare_at_price": 599.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/9_8066f230-1dba-4707-8546-258ae76bcd4b.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/001-4.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p1.jpg"
+  ],
+  "short": "Hiboy's best-known budget commuter: 19 MPH, 17-mile range, app control.",
+  "description": "The S2 is the scooter that put Hiboy on the map, and it's still one of the best values for short commutes and campus rides. A 350W motor gets you to 19 MPH, and the 36V battery covers about 17 miles per charge.\n\nHoneycomb tires mean no flats, the rear suspension takes the edge off rough pavement, and you get both an electronic brake and a disc brake. Cruise control, two speed modes and lighting are adjustable in the Hiboy app.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 17 miles",
+   "Motor": "350W",
+   "Battery": "36V 7.5Ah",
+   "Brakes": "E-brake + disc",
+   "Tires": "8.5\" honeycomb (flat-free)",
+   "Suspension": "Rear",
+   "Max rider weight": "220 lb"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/s2-electric-scooter-with-seat",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "deal": false
+ },
+ {
+  "id": "hiboy-s2-pro",
+  "slug": "hiboy-s2-pro",
+  "name": "Hiboy S2 Pro Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 422.99,
+  "compare_at_price": 935.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_4_58517d89-e631-4b53-9a96-914cae6f2f44.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2pro_59b10ee6-f456-4270-8c5d-89e59eaf7a3c.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/s2pro_12.jpg"
+  ],
+  "short": "More motor and more range than the S2: 500W, 25 miles, 10-inch tires.",
+  "description": "The S2 Pro is the step up for riders with a longer commute. The 500W motor pulls harder on hills, and the larger 36V 11.6Ah battery stretches range to about 25 miles. Regenerative braking puts a little charge back on downhills.\n\nBigger 10-inch honeycomb tires and dual rear suspension make it noticeably smoother than the standard S2, and the aluminum frame keeps it light enough to carry.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 25 miles",
+   "Motor": "500W",
+   "Battery": "36V 11.6Ah",
+   "Brakes": "Dual braking",
+   "Tires": "10\" honeycomb (flat-free)",
+   "Suspension": "Dual rear",
+   "Max rider weight": "220 lb"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s2pro-electric-scooter-for-daily-commuting",
+  "price_checked": "2026-10-22",
+  "featured": true,
+  "best_seller": true,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-s2-se",
+  "slug": "hiboy-s2-se",
+  "name": "Hiboy S2 SE Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 309.99,
+  "compare_at_price": 549.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-Se.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p21.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/11_62d39fe8-46b6-48d5-90a8-1e7034e30987.jpg"
+  ],
+  "short": "An affordable S2 variant with a wider rear fender and anti-slip deck.",
+  "description": "The S2 SE keeps the S2 formula (350W motor, 19 MPH, around 17 miles of range) and adds a wider rear fender and anti-slip deck for wet days. It handles slopes up to about 15%, which covers most city hills.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 17 miles",
+   "Motor": "350W",
+   "Hill climbing": "Up to 15%"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s2-se-electric-scooter",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-s2-nova",
+  "slug": "hiboy-s2-nova",
+  "name": "Hiboy S2 Nova Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 314.99,
+  "compare_at_price": 659.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-1_2a128426-6c3d-4cc3-b018-0faa21276543.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_10bfea0c-fa24-47e5-98a6-a67e6785e1d2.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-2_329e6f81-39c9-424e-8d50-602ab992d4a7.jpg"
+  ],
+  "short": "34.5 lb folding commuter with an extended handlebar and rear suspension.",
+  "description": "The S2 Nova is built for mixing a scooter with trains and car trunks. It weighs 34.5 lb and folds in seconds. A 350W motor and 36V 9Ah battery give you 19 MPH and up to about 20 miles per charge.\n\nA longer 19.2-inch handlebar, hybrid tires and rear suspension make it more comfortable than most scooters in its price range.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 20 miles",
+   "Motor": "350W",
+   "Battery": "36V 9Ah",
+   "Weight": "34.5 lb",
+   "Suspension": "Rear",
+   "Handlebar": "19.2\" wide"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s2-nova-electric-scooter",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "deal": true
+ },
+ {
+  "id": "hiboy-s3",
+  "slug": "hiboy-s3",
+  "name": "Hiboy S3 Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 314.99,
+  "compare_at_price": 599.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_0627c7d8-8919-40a4-88d4-47748f16b155.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_b9ab2cfe-b0c1-4d99-9ef6-7849a360c08b.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_789f50d8-fe56-4c2e-a102-f179735336d3.jpg"
+  ],
+  "short": "Lightweight folding scooter with IPX4 water resistance and a 460W peak motor.",
+  "description": "The S3 is a compact folding commuter for campus and city rides. Its 350W motor (460W peak) reaches 19 MPH and climbs grades up to 15°, and the 36V battery gives up to about 16 miles of range.\n\nAt 34.5 lb it's easy to carry, and IPX4 water resistance means a light rain won't end your ride. Recommended for riders 16 and up.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 16 miles",
+   "Motor": "350W (460W peak)",
+   "Weight": "34.5 lb",
+   "Max rider weight": "220 lb",
+   "Water resistance": "IPX4",
+   "Charge time": "5–7 hours"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s3-electric-scooter",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "deal": true
+ },
+ {
+  "id": "hiboy-ks4-pro",
+  "slug": "hiboy-ks4-pro",
+  "name": "Hiboy KS4 Pro Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 399.99,
+  "compare_at_price": 950.0,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/KS4-PRO.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/hiboy_ks4_pro_electric_scooter.png"
+  ],
+  "short": "500W (750W peak) motor, 25-mile range and side lighting for night rides.",
+  "description": "The KS4 Pro pairs a 500W motor (750W peak) with a 36V 11.6Ah battery for about 25 miles of range at up to 19 MPH. It climbs grades up to 15%.\n\nYou get 10-inch honeycomb tires, dual rear suspension, cruise control and three sets of lights (head, tail and side), which makes it one of the more visible scooters for riding after dark.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 25 miles",
+   "Motor": "500W (750W peak)",
+   "Battery": "36V 11.6Ah",
+   "Tires": "10\" honeycomb",
+   "Suspension": "Dual rear",
+   "Lights": "Head, tail and side"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-ks4-pro-advanced-commuter-electric-scooter",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-s2-max",
+  "slug": "hiboy-s2-max",
+  "name": "Hiboy S2 MAX Long-Range Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 589.99,
+  "compare_at_price": 834.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p28.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p29.jpg"
+  ],
+  "short": "48V battery and up to 40 miles per charge for long commutes.",
+  "description": "The S2 MAX is the long-range member of the S2 family. A 48V 11.6Ah battery carries you up to about 40 miles on a charge, so most riders charge a couple of times a week instead of every night. Three speed modes let you go easy on the sidewalk or keep up with bike-lane traffic.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 40 miles",
+   "Battery": "48V 11.6Ah",
+   "Speed modes": "3"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-max-pro",
+  "slug": "hiboy-max-pro",
+  "name": "Hiboy MAX Pro Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 729.99,
+  "compare_at_price": 999.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/MAX-Pro_899ea544-791a-4226-b0f3-592031d6fffe.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/14_c4ad37d7-4609-40ca-93a9-5b2ff5aaec09.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_78ab318d-298c-4375-a2a0-36befcf9c467.png"
+  ],
+  "short": "22 MPH, self-healing 11-inch tires and a wide deck for daily riders.",
+  "description": "The MAX Pro is for riders who use their scooter every day and want fewer charges and a smoother ride. Its 11-inch self-healing tires absorb small bumps and seal minor punctures, and it reaches up to 22 MPH.\n\nA wide deck, sturdy frame and dual braking keep it stable in traffic, and it's rated for heavier riders.",
+  "specs": {
+   "Top speed": "22 MPH",
+   "Tires": "11\" self-healing",
+   "Brakes": "Dual braking",
+   "Best for": "Daily commuting, heavier riders"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-max-pro-electric-scooter",
+  "price_checked": "2026-10-22",
+  "featured": true,
+  "best_seller": false,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-titan-pro",
+  "slug": "hiboy-titan-pro",
+  "name": "Hiboy TITAN PRO Dual-Motor Scooter (2026)",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 1349.99,
+  "compare_at_price": 1999.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_4a8caf7c-cfba-4be3-a574-da2508fc32e6.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/19_f7851b63-e79c-447d-88b7-c2e421099197.jpg"
+  ],
+  "short": "Flagship off-road scooter: dual Bosch motors, 33 MPH, up to 80 miles.",
+  "description": "The TITAN PRO is Hiboy's top performance scooter. Dual Bosch hub motors with up to 2,400W combined peak power push it to 33 MPH and up 35% inclines, and the battery is rated for up to 80 miles.\n\nIt's built for rough ground: a reinforced 6061 aluminum frame, 10-inch gel-filled tires, dual hydraulic brakes and dual suspension.",
+  "specs": {
+   "Top speed": "33 MPH",
+   "Range": "Up to 80 miles",
+   "Motors": "Dual Bosch hub, 2,400W peak combined",
+   "Hill climbing": "Up to 35%",
+   "Brakes": "Dual hydraulic",
+   "Tires": "10\" gel-filled",
+   "Suspension": "Dual",
+   "Frame": "6061 aluminum"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-titan-pro-electric-scooter-2026",
+  "price_checked": "2026-10-22",
+  "featured": true,
+  "best_seller": false,
+  "new": true,
+  "deal": true
+ },
+ {
+  "id": "hiboy-u2",
+  "slug": "hiboy-u2",
+  "name": "Hiboy U2 Seated Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 459.99,
+  "compare_at_price": 699.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_2_201f6f0f-ba70-4106-9b3d-611a1303bdf0.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p25_9b6d13a3-7be8-4baf-b6b1-2d62d972af5a.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_3_9364d890-9cca-4758-bc79-14174381e4b8.jpg"
+  ],
+  "short": "Sit-down scooter with 14-inch air tires, dual suspension and UL certification.",
+  "description": "The U2 is a seated scooter for riders who'd rather sit than stand. It reaches 20 MPH with up to 25 miles of range, and its 14-inch pneumatic tires and dual suspension soak up bumps far better than small scooter wheels.\n\nIt has a wide saddle, cruise control, three speed modes (11/16/20 MPH) and LED lighting, and it's UL 2272 and UL 2271 certified.",
+  "specs": {
+   "Top speed": "20 MPH",
+   "Range": "Up to 25 miles",
+   "Tires": "14\" pneumatic",
+   "Suspension": "Dual",
+   "Brakes": "E-brake + drum",
+   "Speed modes": "11 / 16 / 20 MPH",
+   "Safety": "UL 2272 & UL 2271"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-u2-electric-scooter-with-seat",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-u3",
+  "slug": "hiboy-u3",
+  "name": "Hiboy U3 Seated Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 511.99,
+  "compare_at_price": 699.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_1.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2-2_1_0b0b9b44-5549-44e2-986c-e8f9c692cdb2.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3-4_1.jpg"
+  ],
+  "short": "Hiboy's newest seated scooter: 20 MPH, 25 miles, 14-inch air tires.",
+  "description": "The U3 builds on the U2 with a sturdy high-carbon steel frame and an extra-wide saddle. It reaches 20 MPH, covers up to 25 miles per charge, and rolls on 14-inch pneumatic tires with dual suspension for a comfortable ride on uneven streets.",
+  "specs": {
+   "Top speed": "20 MPH",
+   "Range": "Up to 25 miles",
+   "Tires": "14\" pneumatic",
+   "Suspension": "Dual",
+   "Brakes": "E-brake + drum",
+   "Speed modes": "11 / 16 / 20 MPH",
+   "Frame": "High-carbon steel"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-u3-electric-scooter-with-seat",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "deal": true
+ },
+ {
+  "id": "hiboy-q2",
+  "slug": "hiboy-q2",
+  "name": "Hiboy Q2 Seated Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 422.99,
+  "compare_at_price": 699.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_25273e06-ce47-4403-b3c4-d8d64941784f.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/7_1cb7d30c-64b7-4d7a-a453-a923b001f440.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_4f1ed5f1-918d-4f9c-9a71-c87a0b9c7acc.jpg"
+  ],
+  "short": "Compact, easy-to-handle seated scooter for short trips and errands.",
+  "description": "The Q2 is a compact seated scooter aimed at newer riders. It's nimble and easy to control, with a comfortable seat for short commutes, errands and rides around the neighborhood. See full specs on Hiboy's product page.",
+  "specs": {
+   "Style": "Seated",
+   "Best for": "New riders, short trips"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-q2-electric-seat-scooter-for-adults",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-s2-lite",
+  "slug": "hiboy-s2-lite",
+  "name": "Hiboy S2 Lite Electric Scooter for Teens",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "price": 299.99,
+  "compare_at_price": 439.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Pink-light_1.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Black-light_1.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-LITE_4ea72553-f3a4-4276-967b-83da41ddd4f6.jpg"
+  ],
+  "short": "A lighter, slower first scooter for teens: 13 MPH top speed, pink or black.",
+  "description": "The S2 Lite is made for younger riders. Its top speed is capped at 13 MPH, the 36V 5Ah battery covers about 10.6 miles, and it fully charges in 3.5 to 4.5 hours.\n\nIt has 6.5-inch solid tires, an electronic brake plus a rear foot brake, and a stem headlight. Available in pink or black.",
+  "specs": {
+   "Top speed": "13 MPH",
+   "Range": "Up to 10.6 miles",
+   "Battery": "36V 5Ah",
+   "Tires": "6.5\" solid",
+   "Brakes": "E-brake + rear foot brake",
+   "Charge time": "3.5–4.5 hours",
+   "Colors": "Pink, black"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s2-lite",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": false
+ },
+ {
+  "id": "hiboy-ex9",
+  "slug": "hiboy-ex9",
+  "name": "Hiboy EX9 Urban Commuter E-Bike",
+  "brand": "Hiboy",
+  "category": "commuter-e-bikes",
+  "price": 1199.99,
+  "compare_at_price": 1999.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/40012_eaf59d3d-a120-4ee1-8f0f-fea2414a5a29.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/8_3561c237-252b-4649-b751-2f5725176bac.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p10_534dd68a-7ded-4076-9c5e-cf2a964d54b0.jpg"
+  ],
+  "short": "Clean-looking commuter with a torque sensor, 1000W peak and up to 62 miles.",
+  "description": "The EX9 is Hiboy's city commuter e-bike. Its dual-sided torque sensor adds power in proportion to how hard you pedal, so the assist feels natural instead of jumpy. The motor peaks at 1000W, and range is rated up to 62 miles.\n\nThe minimalist frame looks more like a regular bike than most e-bikes in this price range.",
+  "specs": {
+   "Peak motor power": "1000W",
+   "Range": "Up to 62 miles",
+   "Pedal assist": "Dual-sided torque sensor",
+   "Style": "Urban commuter"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-ex9-urban-commuter-electric-bike",
+  "price_checked": "2026-10-22",
+  "featured": true,
+  "best_seller": false,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-ex11",
+  "slug": "hiboy-ex11",
+  "name": "Hiboy EX11 Full-Suspension Fat Tire E-Bike",
+  "brand": "Hiboy",
+  "category": "electric-bikes",
+  "price": 1299.99,
+  "compare_at_price": 1999.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/8_1ff918af-3490-4f54-8333-32cc983317ab.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/Hiboy_EX11_Electric_Bike_Navy_Blue.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/EX11-2.jpg"
+  ],
+  "short": "Full-suspension fat tire e-bike with a 48V 18Ah battery and up to 100 miles.",
+  "description": "The EX11 is built for long rides off the pavement. A 4-bar full-suspension frame and 80mm dual-crown fork (with lockout) smooth out gravel and trails, and the removable 48V 18Ah battery is rated up to 100 miles.\n\nThe 750W motor (880W peak) delivers 90 N·m of torque through a torque sensor for strong climbs. Stopping is handled by dual-piston hydraulic disc brakes with 180mm rotors, on 26×4.0 puncture-resistant fat tires. It fits riders from 5'3\" to 6'3\".",
+  "specs": {
+   "Motor": "48V 750W (880W peak), 90 N·m",
+   "Battery": "48V 18Ah, removable",
+   "Range": "Up to 100 miles",
+   "Suspension": "Full (4-bar rear + 80mm fork)",
+   "Brakes": "Hydraulic disc, 180mm rotors",
+   "Tires": "26×4.0 fat, puncture-resistant",
+   "Rider height": "5'3\"–6'3\"",
+   "Warranty": "1 year"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-ex11-full-suspension-electric-bike",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "deal": true
+ },
+ {
+  "id": "hiboy-ex6f",
+  "slug": "hiboy-ex6f",
+  "name": "Hiboy EX6F Low-Step Folding E-Bike",
+  "brand": "Hiboy",
+  "category": "folding-e-bikes",
+  "price": 949.99,
+  "compare_at_price": 1579.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3_8262f47e-025e-4282-bf37-43530125492e.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p19_04555e21-fc3b-43e9-afc6-2069f96a64dd.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_bb6c5694-53fe-46e9-a310-2ee8ee0ef9ad.jpg"
+  ],
+  "short": "Folding fat tire e-bike with a low-step frame, UL-certified battery and 75-mile range.",
+  "description": "The EX6F folds in three steps for apartments, trunks and RVs, and its 15.7-inch low-step frame makes it easy to get on and off. The UL 2849-certified 48V 14.5Ah battery is removable and rated up to 75 miles, with a 750W peak motor for hills.\n\nAdjustable handlebar and seat heights fit riders from 4'9\" to 6'5\". It also has 20×4.0 fat tires, a hydraulic front fork, and a rear rack that carries up to 110 lb.",
+  "specs": {
+   "Peak motor power": "750W",
+   "Battery": "48V 14.5Ah, removable (UL 2849)",
+   "Range": "Up to 75 miles",
+   "Frame": "Low-step (15.7\"), folding",
+   "Tires": "20×4.0 fat",
+   "Suspension": "Hydraulic front fork",
+   "Rider height": "4'9\"–6'5\"",
+   "Rear rack": "Up to 110 lb"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-ex6f-foldable-low-step-electric-bike",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-c1",
+  "slug": "hiboy-c1",
+  "name": "Hiboy C1 Folding Electric Bike",
+  "brand": "Hiboy",
+  "category": "folding-e-bikes",
+  "price": 629.9,
+  "compare_at_price": 899.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/11_187b6d91-4f53-4e9a-b47f-445088b3561e.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_cf80cabc-3a44-4810-8242-a3dd03cb1c47.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/12_5efe7c95-745b-4be9-8368-f2f9851f04f2.png"
+  ],
+  "short": "Hiboy's most affordable folding e-bike for apartment storage and commuting.",
+  "description": "The C1 is an entry-level folding e-bike. Unfold it for the ride to work, then fold it back up to store in an apartment or office. See full specs on Hiboy's product page.",
+  "specs": {
+   "Style": "Folding",
+   "Best for": "Small spaces, short commutes"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-c1-folding-electric-bike",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true
+ },
+ {
+  "id": "hiboy-storage-bag",
+  "slug": "hiboy-storage-bag",
+  "name": "Hiboy Waterproof Scooter Storage Bag",
+  "brand": "Hiboy",
+  "category": "mobility-accessories",
+  "price": 29.99,
+  "compare_at_price": 59.0,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/71b6Yy6pa2L._AC_SL1500.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/91lm0jlX60L._AC_SL1500.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/55.jpg"
+  ],
+  "short": "Waterproof handlebar bag that fits most scooters, including Xiaomi m365.",
+  "description": "A waterproof PU bag that straps to your scooter's handlebar or stem for a phone, keys and a charger. It fits Hiboy scooters and most others, including the Xiaomi m365. Available in 3L and 4L sizes. Not returnable.",
+  "specs": {
+   "Sizes": "3L (9.8×4.7×4.1 in), 4L (11.4×5.9×4.7 in)",
+   "Material": "Waterproof PU",
+   "Fits": "Most electric scooters"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/waterproof-scooter-storage-bag",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": false
+ },
+ {
+  "id": "hiboy-seat",
+  "slug": "hiboy-seat",
+  "name": "Hiboy Seat Attachment for S2-Series Scooters",
+  "brand": "Hiboy",
+  "category": "mobility-accessories",
+  "price": 69.99,
+  "compare_at_price": 89.99,
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/seat.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/61qVFOyXywL._AC_SL1500_0fe488bb-a405-460d-8491-525361c6789a.jpg"
+  ],
+  "short": "Bolt-on adjustable seat for the S2, S2 Pro, KS4, KS4 Pro, MAX Pro, S2 SE and S2 Nova.",
+  "description": "Turns a compatible Hiboy stand-up scooter into a seated one. The aluminum post adjusts from 20.9 to 30.7 inches, and the leather-style cushion wipes clean. The scooter itself is not included. Not returnable.",
+  "specs": {
+   "Fits": "S2, S2 Pro, S2 SE, S2 Nova, KS4, KS4 Pro, MAX Pro",
+   "Seat height": "20.9–30.7 in",
+   "Post": "Aluminum"
+  },
+  "stock": null,
+  "affiliate": "hiboy",
+  "brand_url": "https://www.hiboy.com/products/hiboy-s2-s2-pro-seat",
+  "price_checked": "2026-10-22",
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": false
+ }
+]),
+    ]);
+    state.categories = cats;
+    state.products = (Array.isArray(prods) ? prods : [])
+      .map(p => p.affiliate ? { ...p, partner_url: affiliateLink(STORE.affiliates[p.affiliate], p.brand_url) } : p)
+      .filter(p => !p.affiliate || p.partner_url); // hide affiliate products until that brand's link is set
+  } catch (err) { console.error("Couldn’t load catalog", err); }
+  state.loaded = true;
+  renderChrome(); updateCartCount(); route();
+})();
+</script>
+</body>
+</html>

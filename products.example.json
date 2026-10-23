@@ -1,0 +1,28 @@
+[
+  {
+    "id": "scooter-001",
+    "slug": "voltrider-x10-electric-scooter",
+    "name": "VoltRider X10 Electric Scooter",
+    "brand": "VoltRider",
+    "category": "electric-scooters",
+    "price": 899.00,
+    "compare_at_price": 1099.00,
+    "images": [
+      "https://images.unsplash.com/photo-1594054763281-0946baaad462?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200"
+    ],
+    "short": "28 MPH top speed, 40-mile range, dual suspension.",
+    "description": "Write a full description here. Plain text; blank lines become paragraphs.",
+    "specs": {
+      "Top speed": "28 MPH",
+      "Range": "40 miles",
+      "Motor": "1000W",
+      "Weight": "48 lb"
+    },
+    "stock": 12,
+    "featured": true,
+    "best_seller": false,
+    "deal": true,
+    "new": true,
+    "partner_url": ""
+  }
+]
