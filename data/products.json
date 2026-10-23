@@ -1,1 +1,839 @@
-[]
+[
+ {
+  "id": "hiboy-s2",
+  "slug": "hiboy-s2",
+  "name": "Hiboy S2 Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_0b3ca9d7-f45a-4909-b73b-8b57035070f7.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/9_8066f230-1dba-4707-8546-258ae76bcd4b.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/001-4.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p1.jpg"
+  ],
+  "short": "Hiboy's best-known budget commuter: 19 MPH, 17-mile range, app control.",
+  "description": "The S2 is the scooter that put Hiboy on the map, and it's still one of the best values for short commutes and campus rides. A 350W motor gets you to 19 MPH, and the 36V battery covers about 17 miles per charge.\n\nHoneycomb tires mean no flats, the rear suspension takes the edge off rough pavement, and you get both an electronic brake and a disc brake. Cruise control, two speed modes and lighting are adjustable in the Hiboy app.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 17 miles",
+   "Motor": "350W",
+   "Battery": "36V 7.5Ah",
+   "Brakes": "E-brake + disc",
+   "Tires": "8.5\" honeycomb (flat-free)",
+   "Suspension": "Rear",
+   "Max rider weight": "220 lb"
+  },
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S2 Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-s2-pro",
+  "slug": "hiboy-s2-pro",
+  "name": "Hiboy S2 Pro Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_4_58517d89-e631-4b53-9a96-914cae6f2f44.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2pro_59b10ee6-f456-4270-8c5d-89e59eaf7a3c.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/s2pro_12.jpg"
+  ],
+  "short": "More motor and more range than the S2: 500W, 25 miles, 10-inch tires.",
+  "description": "The S2 Pro is the step up for riders with a longer commute. The 500W motor pulls harder on hills, and the larger 36V 11.6Ah battery stretches range to about 25 miles. Regenerative braking puts a little charge back on downhills.\n\nBigger 10-inch honeycomb tires and dual rear suspension make it noticeably smoother than the standard S2, and the aluminum frame keeps it light enough to carry.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 25 miles",
+   "Motor": "500W",
+   "Battery": "36V 11.6Ah",
+   "Brakes": "Dual braking",
+   "Tires": "10\" honeycomb (flat-free)",
+   "Suspension": "Dual rear",
+   "Max rider weight": "220 lb"
+  },
+  "featured": true,
+  "best_seller": true,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S2 Pro Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-s2-se",
+  "slug": "hiboy-s2-se",
+  "name": "Hiboy S2 SE Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-Se.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p21.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/11_62d39fe8-46b6-48d5-90a8-1e7034e30987.jpg"
+  ],
+  "short": "An affordable S2 variant with a wider rear fender and anti-slip deck.",
+  "description": "The S2 SE keeps the S2 formula (350W motor, 19 MPH, around 17 miles of range) and adds a wider rear fender and anti-slip deck for wet days. It handles slopes up to about 15%, which covers most city hills.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 17 miles",
+   "Motor": "350W",
+   "Hill climbing": "Up to 15%"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S2 SE Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-s2-nova",
+  "slug": "hiboy-s2-nova",
+  "name": "Hiboy S2 Nova Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-1_2a128426-6c3d-4cc3-b018-0faa21276543.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_10bfea0c-fa24-47e5-98a6-a67e6785e1d2.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600-2_329e6f81-39c9-424e-8d50-602ab992d4a7.jpg"
+  ],
+  "short": "34.5 lb folding commuter with an extended handlebar and rear suspension.",
+  "description": "The S2 Nova is built for mixing a scooter with trains and car trunks. It weighs 34.5 lb and folds in seconds. A 350W motor and 36V 9Ah battery give you 19 MPH and up to about 20 miles per charge.\n\nA longer 19.2-inch handlebar, hybrid tires and rear suspension make it more comfortable than most scooters in its price range.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 20 miles",
+   "Motor": "350W",
+   "Battery": "36V 9Ah",
+   "Weight": "34.5 lb",
+   "Suspension": "Rear",
+   "Handlebar": "19.2\" wide"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S2 Nova Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-s3",
+  "slug": "hiboy-s3",
+  "name": "Hiboy S3 Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_0627c7d8-8919-40a4-88d4-47748f16b155.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_b9ab2cfe-b0c1-4d99-9ef6-7849a360c08b.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_789f50d8-fe56-4c2e-a102-f179735336d3.jpg"
+  ],
+  "short": "Lightweight folding scooter with IPX4 water resistance and a 460W peak motor.",
+  "description": "The S3 is a compact folding commuter for campus and city rides. Its 350W motor (460W peak) reaches 19 MPH and climbs grades up to 15°, and the 36V battery gives up to about 16 miles of range.\n\nAt 34.5 lb it's easy to carry, and IPX4 water resistance means a light rain won't end your ride. Recommended for riders 16 and up.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 16 miles",
+   "Motor": "350W (460W peak)",
+   "Weight": "34.5 lb",
+   "Max rider weight": "220 lb",
+   "Water resistance": "IPX4",
+   "Charge time": "5–7 hours"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S3 Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-ks4-pro",
+  "slug": "hiboy-ks4-pro",
+  "name": "Hiboy KS4 Pro Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/KS4-PRO.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/hiboy_ks4_pro_electric_scooter.png"
+  ],
+  "short": "500W (750W peak) motor, 25-mile range and side lighting for night rides.",
+  "description": "The KS4 Pro pairs a 500W motor (750W peak) with a 36V 11.6Ah battery for about 25 miles of range at up to 19 MPH. It climbs grades up to 15%.\n\nYou get 10-inch honeycomb tires, dual rear suspension, cruise control and three sets of lights (head, tail and side), which makes it one of the more visible scooters for riding after dark.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 25 miles",
+   "Motor": "500W (750W peak)",
+   "Battery": "36V 11.6Ah",
+   "Tires": "10\" honeycomb",
+   "Suspension": "Dual rear",
+   "Lights": "Head, tail and side"
+  },
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy KS4 Pro Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-s2-max",
+  "slug": "hiboy-s2-max",
+  "name": "Hiboy S2 MAX Long-Range Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/S2-MAX_abc7af18-0f68-47cb-9058-c4b7bdc7cc40.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p28.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p29.jpg"
+  ],
+  "short": "48V battery and up to 40 miles per charge for long commutes.",
+  "description": "The S2 MAX is the long-range member of the S2 family. A 48V 11.6Ah battery carries you up to about 40 miles on a charge, so most riders charge a couple of times a week instead of every night. Three speed modes let you go easy on the sidewalk or keep up with bike-lane traffic.",
+  "specs": {
+   "Top speed": "19 MPH",
+   "Range": "Up to 40 miles",
+   "Battery": "48V 11.6Ah",
+   "Speed modes": "3"
+  },
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S2 MAX Long-Range Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-max-pro",
+  "slug": "hiboy-max-pro",
+  "name": "Hiboy MAX Pro Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/MAX-Pro_899ea544-791a-4226-b0f3-592031d6fffe.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/14_c4ad37d7-4609-40ca-93a9-5b2ff5aaec09.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_78ab318d-298c-4375-a2a0-36befcf9c467.png"
+  ],
+  "short": "22 MPH, self-healing 11-inch tires and a wide deck for daily riders.",
+  "description": "The MAX Pro is for riders who use their scooter every day and want fewer charges and a smoother ride. Its 11-inch self-healing tires absorb small bumps and seal minor punctures, and it reaches up to 22 MPH.\n\nA wide deck, sturdy frame and dual braking keep it stable in traffic, and it's rated for heavier riders.",
+  "specs": {
+   "Top speed": "22 MPH",
+   "Tires": "11\" self-healing",
+   "Brakes": "Dual braking",
+   "Best for": "Daily commuting, heavier riders"
+  },
+  "featured": true,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy MAX Pro Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-titan-pro",
+  "slug": "hiboy-titan-pro",
+  "name": "Hiboy TITAN PRO Dual-Motor Scooter (2026)",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/pro_1eebf2a4-873e-453b-856d-2e0d08fd61fe.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_4a8caf7c-cfba-4be3-a574-da2508fc32e6.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/19_f7851b63-e79c-447d-88b7-c2e421099197.jpg"
+  ],
+  "short": "Flagship off-road scooter: dual Bosch motors, 33 MPH, up to 80 miles.",
+  "description": "The TITAN PRO is Hiboy's top performance scooter. Dual Bosch hub motors with up to 2,400W combined peak power push it to 33 MPH and up 35% inclines, and the battery is rated for up to 80 miles.\n\nIt's built for rough ground: a reinforced 6061 aluminum frame, 10-inch gel-filled tires, dual hydraulic brakes and dual suspension.",
+  "specs": {
+   "Top speed": "33 MPH",
+   "Range": "Up to 80 miles",
+   "Motors": "Dual Bosch hub, 2,400W peak combined",
+   "Hill climbing": "Up to 35%",
+   "Brakes": "Dual hydraulic",
+   "Tires": "10\" gel-filled",
+   "Suspension": "Dual",
+   "Frame": "6061 aluminum"
+  },
+  "featured": true,
+  "best_seller": false,
+  "new": true,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy TITAN PRO Dual-Motor Scooter"
+  }
+ },
+ {
+  "id": "hiboy-u2",
+  "slug": "hiboy-u2",
+  "name": "Hiboy U2 Seated Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_2_201f6f0f-ba70-4106-9b3d-611a1303bdf0.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p25_9b6d13a3-7be8-4baf-b6b1-2d62d972af5a.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_3_9364d890-9cca-4758-bc79-14174381e4b8.jpg"
+  ],
+  "short": "Sit-down scooter with 14-inch air tires, dual suspension and UL certification.",
+  "description": "The U2 is a seated scooter for riders who'd rather sit than stand. It reaches 20 MPH with up to 25 miles of range, and its 14-inch pneumatic tires and dual suspension soak up bumps far better than small scooter wheels.\n\nIt has a wide saddle, cruise control, three speed modes (11/16/20 MPH) and LED lighting, and it's UL 2272 and UL 2271 certified.",
+  "specs": {
+   "Top speed": "20 MPH",
+   "Range": "Up to 25 miles",
+   "Tires": "14\" pneumatic",
+   "Suspension": "Dual",
+   "Brakes": "E-brake + drum",
+   "Speed modes": "11 / 16 / 20 MPH",
+   "Safety": "UL 2272 & UL 2271"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy U2 Seated Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-u3",
+  "slug": "hiboy-u3",
+  "name": "Hiboy U3 Seated Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_1.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2-2_1_0b0b9b44-5549-44e2-986c-e8f9c692cdb2.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3-4_1.jpg"
+  ],
+  "short": "Hiboy's newest seated scooter: 20 MPH, 25 miles, 14-inch air tires.",
+  "description": "The U3 builds on the U2 with a sturdy high-carbon steel frame and an extra-wide saddle. It reaches 20 MPH, covers up to 25 miles per charge, and rolls on 14-inch pneumatic tires with dual suspension for a comfortable ride on uneven streets.",
+  "specs": {
+   "Top speed": "20 MPH",
+   "Range": "Up to 25 miles",
+   "Tires": "14\" pneumatic",
+   "Suspension": "Dual",
+   "Brakes": "E-brake + drum",
+   "Speed modes": "11 / 16 / 20 MPH",
+   "Frame": "High-carbon steel"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy U3 Seated Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-q2",
+  "slug": "hiboy-q2",
+  "name": "Hiboy Q2 Seated Electric Scooter",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_25273e06-ce47-4403-b3c4-d8d64941784f.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/7_1cb7d30c-64b7-4d7a-a453-a923b001f440.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/5_4f1ed5f1-918d-4f9c-9a71-c87a0b9c7acc.jpg"
+  ],
+  "short": "Compact, easy-to-handle seated scooter for short trips and errands.",
+  "description": "The Q2 is a compact seated scooter aimed at newer riders. It's nimble and easy to control, with a comfortable seat for short commutes, errands and rides around the neighborhood. See full specs on Hiboy's product page.",
+  "specs": {
+   "Style": "Seated",
+   "Best for": "New riders, short trips"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy Q2 Seated Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-s2-lite",
+  "slug": "hiboy-s2-lite",
+  "name": "Hiboy S2 Lite Electric Scooter for Teens",
+  "brand": "Hiboy",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Pink-light_1.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2_Lite-Black-light_1.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-LITE_4ea72553-f3a4-4276-967b-83da41ddd4f6.jpg"
+  ],
+  "short": "A lighter, slower first scooter for teens: 13 MPH top speed, pink or black.",
+  "description": "The S2 Lite is made for younger riders. Its top speed is capped at 13 MPH, the 36V 5Ah battery covers about 10.6 miles, and it fully charges in 3.5 to 4.5 hours.\n\nIt has 6.5-inch solid tires, an electronic brake plus a rear foot brake, and a stem headlight. Available in pink or black.",
+  "specs": {
+   "Top speed": "13 MPH",
+   "Range": "Up to 10.6 miles",
+   "Battery": "36V 5Ah",
+   "Tires": "6.5\" solid",
+   "Brakes": "E-brake + rear foot brake",
+   "Charge time": "3.5–4.5 hours",
+   "Colors": "Pink, black"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy S2 Lite Electric Scooter"
+  }
+ },
+ {
+  "id": "hiboy-ex9",
+  "slug": "hiboy-ex9",
+  "name": "Hiboy EX9 Urban Commuter E-Bike",
+  "brand": "Hiboy",
+  "category": "commuter-e-bikes",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/40012_eaf59d3d-a120-4ee1-8f0f-fea2414a5a29.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/8_3561c237-252b-4649-b751-2f5725176bac.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p10_534dd68a-7ded-4076-9c5e-cf2a964d54b0.jpg"
+  ],
+  "short": "Clean-looking commuter with a torque sensor, 1000W peak and up to 62 miles.",
+  "description": "The EX9 is Hiboy's city commuter e-bike. Its dual-sided torque sensor adds power in proportion to how hard you pedal, so the assist feels natural instead of jumpy. The motor peaks at 1000W, and range is rated up to 62 miles.\n\nThe minimalist frame looks more like a regular bike than most e-bikes in this price range.",
+  "specs": {
+   "Peak motor power": "1000W",
+   "Range": "Up to 62 miles",
+   "Pedal assist": "Dual-sided torque sensor",
+   "Style": "Urban commuter"
+  },
+  "featured": true,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy EX9 Urban Commuter E-Bike"
+  }
+ },
+ {
+  "id": "hiboy-ex11",
+  "slug": "hiboy-ex11",
+  "name": "Hiboy EX11 Full-Suspension Fat Tire E-Bike",
+  "brand": "Hiboy",
+  "category": "electric-bikes",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/8_1ff918af-3490-4f54-8333-32cc983317ab.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/Hiboy_EX11_Electric_Bike_Navy_Blue.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/EX11-2.jpg"
+  ],
+  "short": "Full-suspension fat tire e-bike with a 48V 18Ah battery and up to 100 miles.",
+  "description": "The EX11 is built for long rides off the pavement. A 4-bar full-suspension frame and 80mm dual-crown fork (with lockout) smooth out gravel and trails, and the removable 48V 18Ah battery is rated up to 100 miles.\n\nThe 750W motor (880W peak) delivers 90 N·m of torque through a torque sensor for strong climbs. Stopping is handled by dual-piston hydraulic disc brakes with 180mm rotors, on 26×4.0 puncture-resistant fat tires. It fits riders from 5'3\" to 6'3\".",
+  "specs": {
+   "Motor": "48V 750W (880W peak), 90 N·m",
+   "Battery": "48V 18Ah, removable",
+   "Range": "Up to 100 miles",
+   "Suspension": "Full (4-bar rear + 80mm fork)",
+   "Brakes": "Hydraulic disc, 180mm rotors",
+   "Tires": "26×4.0 fat, puncture-resistant",
+   "Rider height": "5'3\"–6'3\"",
+   "Warranty": "1 year"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy EX11 Full-Suspension Fat Tire E-Bike"
+  }
+ },
+ {
+  "id": "hiboy-ex6f",
+  "slug": "hiboy-ex6f",
+  "name": "Hiboy EX6F Low-Step Folding E-Bike",
+  "brand": "Hiboy",
+  "category": "folding-e-bikes",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3_8262f47e-025e-4282-bf37-43530125492e.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p19_04555e21-fc3b-43e9-afc6-2069f96a64dd.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/2_bb6c5694-53fe-46e9-a310-2ee8ee0ef9ad.jpg"
+  ],
+  "short": "Folding fat tire e-bike with a low-step frame, UL-certified battery and 75-mile range.",
+  "description": "The EX6F folds in three steps for apartments, trunks and RVs, and its 15.7-inch low-step frame makes it easy to get on and off. The UL 2849-certified 48V 14.5Ah battery is removable and rated up to 75 miles, with a 750W peak motor for hills.\n\nAdjustable handlebar and seat heights fit riders from 4'9\" to 6'5\". It also has 20×4.0 fat tires, a hydraulic front fork, and a rear rack that carries up to 110 lb.",
+  "specs": {
+   "Peak motor power": "750W",
+   "Battery": "48V 14.5Ah, removable (UL 2849)",
+   "Range": "Up to 75 miles",
+   "Frame": "Low-step (15.7\"), folding",
+   "Tires": "20×4.0 fat",
+   "Suspension": "Hydraulic front fork",
+   "Rider height": "4'9\"–6'5\"",
+   "Rear rack": "Up to 110 lb"
+  },
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy EX6F Low-Step Folding E-Bike"
+  }
+ },
+ {
+  "id": "hiboy-c1",
+  "slug": "hiboy-c1",
+  "name": "Hiboy C1 Folding Electric Bike",
+  "brand": "Hiboy",
+  "category": "folding-e-bikes",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/11_187b6d91-4f53-4e9a-b47f-445088b3561e.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_cf80cabc-3a44-4810-8242-a3dd03cb1c47.png",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/12_5efe7c95-745b-4be9-8368-f2f9851f04f2.png"
+  ],
+  "short": "Hiboy's most affordable folding e-bike for apartment storage and commuting.",
+  "description": "The C1 is an entry-level folding e-bike. Unfold it for the ride to work, then fold it back up to store in an apartment or office. See full specs on Hiboy's product page.",
+  "specs": {
+   "Style": "Folding",
+   "Best for": "Small spaces, short commutes"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy C1 Folding Electric Bike"
+  }
+ },
+ {
+  "id": "hiboy-storage-bag",
+  "slug": "hiboy-storage-bag",
+  "name": "Hiboy Waterproof Scooter Storage Bag",
+  "brand": "Hiboy",
+  "category": "mobility-accessories",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/71b6Yy6pa2L._AC_SL1500.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/91lm0jlX60L._AC_SL1500.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/55.jpg"
+  ],
+  "short": "Waterproof handlebar bag that fits most scooters, including Xiaomi m365.",
+  "description": "A waterproof PU bag that straps to your scooter's handlebar or stem for a phone, keys and a charger. It fits Hiboy scooters and most others, including the Xiaomi m365. Available in 3L and 4L sizes. Not returnable.",
+  "specs": {
+   "Sizes": "3L (9.8×4.7×4.1 in), 4L (11.4×5.9×4.7 in)",
+   "Material": "Waterproof PU",
+   "Fits": "Most electric scooters"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy Waterproof Scooter Storage Bag"
+  }
+ },
+ {
+  "id": "hiboy-seat",
+  "slug": "hiboy-seat",
+  "name": "Hiboy Seat Attachment for S2-Series Scooters",
+  "brand": "Hiboy",
+  "category": "mobility-accessories",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/seat.jpg",
+   "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/61qVFOyXywL._AC_SL1500_0fe488bb-a405-460d-8491-525361c6789a.jpg"
+  ],
+  "short": "Bolt-on adjustable seat for the S2, S2 Pro, KS4, KS4 Pro, MAX Pro, S2 SE and S2 Nova.",
+  "description": "Turns a compatible Hiboy stand-up scooter into a seated one. The aluminum post adjusts from 20.9 to 30.7 inches, and the leather-style cushion wipes clean. The scooter itself is not included. Not returnable.",
+  "specs": {
+   "Fits": "S2, S2 Pro, S2 SE, S2 Nova, KS4, KS4 Pro, MAX Pro",
+   "Seat height": "20.9–30.7 in",
+   "Post": "Aluminum"
+  },
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "price": null,
+  "deal": true,
+  "amazon": {
+   "search": "Hiboy Seat Attachment for S2-Series Scooters"
+  }
+ },
+ {
+  "id": "gotrax-gx3",
+  "slug": "gotrax-gx3",
+  "name": "Gotrax GX3 Off-Road Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/files/7L2A3360.jpg?v=1771342139"
+  ],
+  "short": "Gotrax's flagship off-roader with dual 1000W motors and adjustable suspension.",
+  "description": "The GX3 is Gotrax's most capable scooter, built for riders who want to leave the pavement. Two 1000W motors drive both wheels, and quad-coil adjustable suspension soaks up rough terrain.\n\nOff-road tires round it out for trails, gravel and broken streets.",
+  "specs": {
+   "Motors": "Dual 1000W",
+   "Suspension": "Quad-coil, adjustable",
+   "Tires": "Off-road"
+  },
+  "price": null,
+  "featured": true,
+  "best_seller": false,
+  "new": true,
+  "deal": false,
+  "amazon": {
+   "search": "Gotrax GX3 electric scooter"
+  }
+ },
+ {
+  "id": "gotrax-gx2",
+  "slug": "gotrax-gx2",
+  "name": "Gotrax GX2 Dual-Motor Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/files/gx2-all-terrain-electric-scooter-474546.jpg?v=1716984873"
+  ],
+  "short": "All-terrain scooter with dual 800W motors and dual suspension.",
+  "description": "The GX2 pairs two 800W motors with front and rear suspension for strong acceleration and a controlled ride over rough roads.",
+  "specs": {
+   "Motors": "Dual 800W",
+   "Suspension": "Front + rear"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": false,
+  "amazon": {
+   "search": "Gotrax GX2 dual motor electric scooter"
+  }
+ },
+ {
+  "id": "gotrax-gx1",
+  "slug": "gotrax-gx1",
+  "name": "Gotrax GX1 Dual-Motor Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/files/GX1Hero1500x1500.jpg?v=1700587593"
+  ],
+  "short": "Dual 600W motors, full suspension and a 30 MPH top speed.",
+  "description": "The GX1 brings dual-motor power to a more accessible price. Two 600W motors push it to 30 MPH, and front and rear suspension keep it composed at speed.",
+  "specs": {
+   "Top speed": "30 MPH",
+   "Motors": "Dual 600W",
+   "Suspension": "Front + rear"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": false,
+  "amazon": {
+   "search": "Gotrax GX1 electric scooter"
+  }
+ },
+ {
+  "id": "gotrax-gx-zero",
+  "slug": "gotrax-gx-zero",
+  "name": "Gotrax GX Zero Dual-Motor Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/files/gx-zero-dual-motor-electric-scooter-623788.jpg?v=1715161895"
+  ],
+  "short": "Entry to dual-motor riding: two 500W motors with front and rear suspension.",
+  "description": "The GX Zero is Gotrax's most affordable dual-motor scooter, with two 500W motors and front and rear suspension for extra grip and comfort.",
+  "specs": {
+   "Motors": "Dual 500W",
+   "Suspension": "Front + rear"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": false,
+  "amazon": {
+   "search": "Gotrax GX Zero dual motor scooter"
+  }
+ },
+ {
+  "id": "gotrax-g4",
+  "slug": "gotrax-g4",
+  "name": "Gotrax G4 Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/files/g4-electric-scooter-for-adults-9284598.jpg?v=1776169808"
+  ],
+  "short": "Folding commuter with a 500W motor and 20 MPH top speed.",
+  "description": "The G4 is a commuter scooter with a 500W motor, a 20 MPH top speed and a folding frame that packs down for trains, offices and car trunks.",
+  "specs": {
+   "Top speed": "20 MPH",
+   "Motor": "500W",
+   "Folding": "Yes"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": true,
+  "new": false,
+  "deal": false,
+  "amazon": {
+   "search": "Gotrax G4 electric scooter"
+  }
+ },
+ {
+  "id": "gotrax-g3-max",
+  "slug": "gotrax-g3-max",
+  "name": "Gotrax G3 MAX Long-Range Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/files/g3-max-electric-scooter-664994.jpg?v=1730367781"
+  ],
+  "short": "Up to 37 miles per charge on an LG battery, in a light, portable frame.",
+  "description": "Range is the point of the G3 MAX: its high-capacity LG battery is rated for up to 37 miles per charge, and the frame stays light enough to carry.",
+  "specs": {
+   "Range": "Up to 37 miles",
+   "Battery": "LG cells"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true,
+  "amazon": {
+   "search": "Gotrax G3 MAX electric scooter"
+  }
+ },
+ {
+  "id": "gotrax-g3-plus",
+  "slug": "gotrax-g3-plus",
+  "name": "Gotrax G3 Plus Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/products/g3-plus-electric-scooter-589453.jpg?v=1681768661"
+  ],
+  "short": "Step up from base models with larger tires and more speed.",
+  "description": "The G3 Plus builds on Gotrax's entry scooters with larger tires for a smoother ride and a higher top speed.",
+  "specs": {
+   "Tires": "Larger than base G-series"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true,
+  "amazon": {
+   "search": "Gotrax G3 Plus electric scooter"
+  }
+ },
+ {
+  "id": "gotrax-gxl-v2",
+  "slug": "gotrax-gxl-v2",
+  "name": "Gotrax GXL V2 Lightweight Electric Scooter",
+  "brand": "Gotrax",
+  "category": "electric-scooters",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0071/0406/9747/products/gxl-v2-electric-scooter-131781.jpg?v=1681768698"
+  ],
+  "short": "Light, portable starter scooter with 8.5\" tires.",
+  "description": "The GXL V2 is a lightweight, easy-to-carry scooter for short trips and first-time riders, rolling on 8.5-inch tires.",
+  "specs": {
+   "Tires": "8.5\"",
+   "Range": "10+ miles"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": false,
+  "deal": true,
+  "amazon": {
+   "search": "Gotrax GXL V2 electric scooter"
+  }
+ },
+ {
+  "id": "jasion-eb5-roamer-st",
+  "slug": "jasion-eb5-roamer-st",
+  "name": "Jasion EB5 Roamer ST Electric Bike",
+  "brand": "Jasion",
+  "category": "commuter-e-bikes",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0605/0044/3373/files/9_6691e3a1-9707-40cd-b351-ad27b102b1e7.png?v=1762156436"
+  ],
+  "short": "Step-through commuter with a removable 48V battery and up to 62 miles of range.",
+  "description": "The EB5 Roamer ST is an easy-to-mount step-through e-bike for everyday riding. Jasion rates the removable 48V 11Ah battery for up to 62 miles, and it recharges in 4–5 hours.\n\nMichelin 26-inch tires and front suspension keep the ride smooth, and it carries up to 300 lb.",
+  "specs": {
+   "Battery": "48V 11Ah, removable",
+   "Range": "Up to 62 miles",
+   "Charge time": "4–5 hours",
+   "Torque": "60 Nm",
+   "Tires": "26\" x 2.25\" Michelin",
+   "Suspension": "Front",
+   "Max load": "300 lb"
+  },
+  "price": null,
+  "featured": true,
+  "best_seller": true,
+  "new": false,
+  "deal": false,
+  "amazon": {
+   "search": "Jasion EB5 Roamer ST ebike"
+  }
+ },
+ {
+  "id": "jlab-go-sport-anc",
+  "slug": "jlab-go-sport-anc",
+  "name": "JLab GO Sport ANC True Wireless Earbuds",
+  "brand": "JLab",
+  "category": "gadgets",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0240/9337/files/2_GOSportANC_Graphite.jpg?v=1781809694"
+  ],
+  "short": "Sport earbuds with active noise canceling, IP55 and 35+ hours with the case.",
+  "description": "Built for training and commutes, GO Sport ANC earbuds combine active noise canceling with a Be Aware mode for hearing traffic. They're IP55 rated and give 35+ hours of total playtime with the charging case.",
+  "specs": {
+   "Noise canceling": "Active (ANC) + Be Aware",
+   "Rating": "IP55",
+   "Playtime": "35+ hours with case"
+  },
+  "price": null,
+  "featured": false,
+  "best_seller": false,
+  "new": true,
+  "deal": true,
+  "amazon": {
+   "search": "JLab GO Sport ANC earbuds"
+  }
+ },
+ {
+  "id": "jlab-jbuds-lux-anc",
+  "slug": "jlab-jbuds-lux-anc",
+  "name": "JLab JBuds Lux ANC Headphones",
+  "brand": "JLab",
+  "category": "gadgets",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0240/9337/files/1JBudsLuxJelleRoyalCaviar.jpg?v=1781819522"
+  ],
+  "short": "Over-ear headphones with hybrid ANC and up to 70 hours of playtime.",
+  "description": "JBuds Lux ANC headphones use hybrid noise canceling that cuts ambient noise by up to 35dB. Battery life reaches 70 hours with ANC off and 40 hours with it on, and 40mm drivers deliver the sound.",
+  "specs": {
+   "Noise canceling": "Hybrid ANC, up to 35dB",
+   "Playtime": "70 h (ANC off) / 40 h (ANC on)",
+   "Drivers": "40mm dynamic"
+  },
+  "price": null,
+  "featured": true,
+  "best_seller": false,
+  "new": false,
+  "deal": false,
+  "amazon": {
+   "search": "JLab JBuds Lux ANC headphones"
+  }
+ }
+]

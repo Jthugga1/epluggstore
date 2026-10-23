@@ -261,3 +261,6 @@ h2 { font-size: clamp(28px, 6vw, 40px); font-weight: 700; }
   .cat-grid { grid-template-columns: repeat(4, 1fr); }
   .cat-card.wide { aspect-ratio: auto; }
 }
+
+.price-note{font-size:14px;font-weight:600;color:var(--green, #39ff88)}
+.price-big-note{font-size:24px}

@@ -12,16 +12,30 @@ const STORE = {
   freeShippingOver: 150,
   flatShipping: 9.99, // charged under the free-shipping threshold — set your real rate
   promoCodes: { PLUGGSTUDENT: 0.10 }, // must match netlify/functions/checkout.js
-  heroStats: [["7", "CATEGORIES"], ["30-DAY", "RETURNS"], ["$150+", "SHIPS FREE"]],
+  heroStats: [["7", "CATEGORIES"], ["TOP", "BRANDS"], ["SECURE", "CHECKOUT ON AMAZON"]],
   heroImage: "https://images.unsplash.com/photo-1594054763281-0946baaad462?crop=entropy&cs=srgb&fm=jpg&q=70&w=1600",
   trailImage: "https://images.unsplash.com/photo-1624243519828-52a0f2c88af3?crop=entropy&cs=srgb&fm=jpg&q=80&w=1400",
   checkoutEndpoint: "/.netlify/functions/checkout",
+  // Amazon Associates Store ID. Products with "amazon" set link to Amazon with this tag.
+  amazonTag: "epluggstore-20",
 };
 
+/* Amazon link for a product: exact item if an ASIN is set, otherwise a search for the exact model. */
+function amazonLink(p) {
+  const a = p.amazon || {};
+  const tag = encodeURIComponent(STORE.amazonTag);
+  if (a.asin) return `https://www.amazon.com/dp/${encodeURIComponent(a.asin)}?tag=${tag}`;
+  return `https://www.amazon.com/s?k=${encodeURIComponent(a.search || p.name)}&tag=${tag}`;
+}
+const isPartner = p => !!p.partner_url;
+const priceHtml = (p, big) => p.amazon
+  ? `<span class="${big ? "price-big-note" : "price-note"}">See price on Amazon</span>`
+  : `${money(p.price)}${p.compare_at_price > p.price ? `<s>${money(p.compare_at_price)}</s>` : ""}`;
+
 const TICKER = [
-  "⚡ NOW SHIPPING ACROSS THE CONTIGUOUS US",
-  `FREE SHIPPING OVER $${STORE.freeShippingOver}`,
-  "STUDENTS SAVE 10% WITH CODE PLUGGSTUDENT",
+  "⚡ ELECTRIC SCOOTERS · E-BIKES · GADGETS",
+  "TOP BRANDS: HIBOY · GOTRAX · JASION · HEYBIKE · JLAB",
+  "SECURE CHECKOUT ON AMAZON",
 ];
 
 const state = { products: [], categories: [], loaded: false };
@@ -93,11 +107,11 @@ function emptyState(title = "New gear is charging up.", body = "Our catalog is b
 }
 function productCard(p) {
   const img = (p.images && p.images[0]) || "";
-  const off = p.compare_at_price > p.price ? Math.round((1 - p.price / p.compare_at_price) * 100) : 0;
+  const off = !p.amazon && p.compare_at_price > p.price ? Math.round((1 - p.price / p.compare_at_price) * 100) : 0;
   return `<a class="prod-card" href="#/product/${esc(p.slug)}">
     <div class="thumb">${img ? `<img src="${esc(img)}" alt="${esc(p.name)}" loading="lazy">` : ""}${off ? `<span class="badge">-${off}%</span>` : p.new ? `<span class="badge">NEW</span>` : ""}</div>
     <div class="info"><span class="brand-line">${esc(p.brand || "")}</span><span class="name">${esc(p.name)}</span>
-    <span class="price">${money(p.price)}${off ? `<s>${money(p.compare_at_price)}</s>` : ""}</span></div></a>`;
+    <span class="price">${priceHtml(p)}</span></div></a>`;
 }
 function productGrid(list) {
   return list.length ? `<div class="prod-grid">${list.map(productCard).join("")}</div>` : emptyState();
@@ -116,7 +130,8 @@ function catCard(c, i) {
 function pageHome() {
   const P = state.products;
   const featured = P.filter(p => p.featured).slice(0, 8);
-  const deals = P.filter(p => p.deal || p.compare_at_price > p.price).slice(0, 8);
+  const deals = P.filter(p => p.deal).slice(0, 8);
+  const ownStock = P.some(p => !isPartner(p));
   const best = P.filter(p => p.best_seller).slice(0, 8);
   const fresh = P.filter(p => p.new).slice(0, 8);
   return `
@@ -132,28 +147,28 @@ function pageHome() {
     </div>
   </section>
   <section class="trust"><div class="wrap trust-grid">
-    <div class="trust-item"><div class="trust-icon">${ICON.truck}</div><div><b>Free shipping</b><small>On orders over $${STORE.freeShippingOver}</small></div></div>
-    <div class="trust-item"><div class="trust-icon">${ICON.undo}</div><div><b>30-day returns</b><small>Hassle-free refunds</small></div></div>
-    <div class="trust-item"><div class="trust-icon">${ICON.shield}</div><div><b>Secure checkout</b><small>Ships across the contiguous US</small></div></div>
-    <div class="trust-item"><div class="trust-icon">${ICON.support}</div><div><b>Expert support</b><small>Riders helping riders</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.truck}</div><div><b>Fast delivery</b><small>Shipped by Amazon &amp; its sellers</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.undo}</div><div><b>Easy returns</b><small>Under Amazon’s return policy</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.shield}</div><div><b>Secure checkout</b><small>Pay on Amazon, safely</small></div></div>
+    <div class="trust-item"><div class="trust-icon">${ICON.support}</div><div><b>Hand-picked gear</b><small>Riders helping riders</small></div></div>
   </div></section>
   <section class="section wrap">${sectionHead("Browse", "Shop by category", "#/shop")}
     <div class="cat-grid">${state.categories.map(catCard).join("")}</div></section>
   <section class="section wrap">${sectionHead("Hand-picked", "Featured gear", "#/shop")}${productGrid(featured)}</section>
   <section class="section wrap"><div class="deals">
-    <p class="eyebrow" style="display:flex;gap:10px;align-items:center">${ICON.bolt} Flash deals</p>
-    <h2>Trending deals end tonight</h2>
-    <div class="countdown"><span class="box" id="cdH">00</span><span class="sep">:</span><span class="box" id="cdM">00</span><span class="sep">:</span><span class="box" id="cdS">00</span><a href="#/shop?deals=1">All deals →</a></div>
+    <p class="eyebrow" style="display:flex;gap:10px;align-items:center">${ICON.bolt} Top value</p>
+    <h2>Best bang for the buck</h2>
+    <div class="countdown"><a href="#/shop?deals=1">All picks →</a></div>
     ${productGrid(deals)}
   </div></section>
   <section class="section wrap">${sectionHead("Most loved", "Best sellers", "#/shop")}${productGrid(best)}</section>
   <section class="section wrap"><div class="banner"><img src="${esc(STORE.trailImage)}" alt="" loading="lazy">
     <div class="banner-body"><p class="eyebrow">Trail season</p><h2>E-bikes built to climb anything.</h2><a class="btn btn-green" href="#/category/electric-bikes">Shop e-bikes</a></div></div></section>
-  <section class="section wrap"><div class="promo">
+  ${ownStock ? `<section class="section wrap"><div class="promo">
     <svg class="promo-bolt" viewBox="0 0 24 24" fill="none" stroke="#04150A" stroke-width="2.2" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
     <p class="eyebrow">Students &amp; commuters</p><h2>Save 10% on your first ride.</h2>
     <div class="promo-row"><button class="code-chip" data-copy="PLUGGSTUDENT">PLUGGSTUDENT</button><a class="btn btn-dark" href="#/shop">Shop now</a></div>
-  </div></section>
+  </div></section>` : ""}
   <section class="section wrap">${sectionHead("Just landed", "New arrivals", "#/shop?sort=new")}${productGrid(fresh)}</section>`;
 }
 
@@ -164,13 +179,13 @@ function pageShop(params, fixedCat) {
   const dealsOnly = params.get("deals") === "1";
   let list = state.products.filter(p =>
     (!cat || p.category === cat) &&
-    (!dealsOnly || p.deal || p.compare_at_price > p.price) &&
+    (!dealsOnly || p.deal) &&
     (!q || [p.name, p.brand, p.short].join(" ").toLowerCase().includes(q)));
   const sorters = {
     featured: (a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0),
     new: (a, b) => (b.new ? 1 : 0) - (a.new ? 1 : 0),
-    "price-asc": (a, b) => a.price - b.price,
-    "price-desc": (a, b) => b.price - a.price,
+    "price-asc": (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9),
+    "price-desc": (a, b) => (b.price ?? -1) - (a.price ?? -1),
   };
   list = [...list].sort(sorters[sort] || sorters.featured);
   const c = catBySlug(cat);
@@ -217,12 +232,12 @@ function pageProduct(slug) {
       <div>
         <p class="eyebrow">${esc(p.brand || "")}</p>
         <h1>${esc(p.name)}</h1>
-        <div class="price">${money(p.price)}${off ? `<s>${money(p.compare_at_price)}</s>` : ""}</div>
+        <div class="price">${priceHtml(p, true)}</div>
         ${p.short ? `<p class="muted" style="font-size:18px">${esc(p.short)}</p>` : ""}
-        <p class="muted" style="font-size:15px">${out ? "Out of stock" : p.price >= STORE.freeShippingOver ? "Ships free to the contiguous US" : `Free shipping on orders over $${STORE.freeShippingOver}`}</p>
+        ${isPartner(p) ? "" : `<p class="muted" style="font-size:15px">${out ? "Out of stock" : p.price >= STORE.freeShippingOver ? "Ships free to the contiguous US" : `Free shipping on orders over $${STORE.freeShippingOver}`}</p>`}
         ${p.partner_url ? `
-          <a class="btn btn-green btn-block" href="${esc(p.partner_url)}" target="_blank" rel="noopener sponsored">Buy from partner ${ICON.arrow}</a>
-          <p class="muted" style="font-size:13px">Sold by a partner retailer. We may earn a commission.</p>` : `
+          <a class="btn btn-green btn-block" href="${esc(p.partner_url)}" target="_blank" rel="noopener sponsored nofollow">${p.amazon ? "Check price on Amazon" : "Buy from partner"} ${ICON.arrow}</a>
+          <p class="muted" style="font-size:13px">${p.amazon ? "Price, shipping and returns are set by Amazon and its sellers. As an Amazon Associate, E Plugg earns from qualifying purchases." : "Sold by a partner retailer. We may earn a commission."}</p>` : `
           <div style="display:flex;gap:12px;align-items:center;margin:18px 0">
             <div class="qty"><button data-q="-1" aria-label="Less">−</button><span id="qty">1</span><button data-q="1" aria-label="More">+</button></div>
             <button class="btn btn-green" style="flex:1" id="addBtn" data-id="${esc(p.id)}" ${out ? "disabled" : ""}>${out ? "Sold out" : "Add to cart"}</button>
@@ -298,6 +313,7 @@ const PAGES = {
       <button class="btn btn-green">Send message</button></form>`,
   faqs: () => `<p class="eyebrow">Support</p><h1>FAQs</h1><div class="faq">
     ${[
+      ["How does buying work?", "Products on E Plugg are sold and shipped by Amazon and its sellers. Tap “Check price on Amazon” on any product to see the current price and check out on Amazon. Shipping, returns and order support for those items are handled by Amazon. As an Amazon Associate, E Plugg earns from qualifying purchases at no extra cost to you."],
       ["Where do you ship?", "We ship to all addresses in the contiguous United States. We don’t currently ship to Alaska, Hawaii, U.S. territories or internationally."],
       ["How much is shipping?", `Shipping is free on orders over $${STORE.freeShippingOver}. Smaller orders ship at a flat rate shown in your cart before you pay.`],
       ["How long does delivery take?", "Most in-stock items ship within 1–3 business days. Large items like e-bikes may ship by freight and take a few extra days."],
@@ -370,7 +386,7 @@ function renderChrome() {
       <div class="foot-col"><h4>COMPANY</h4><a href="#/page/about">About us</a><a href="#/page/privacy">Privacy policy</a><a href="#/page/terms">Terms &amp; conditions</a></div>
     </div>
     ${contactBlock() ? `<div class="contact-lines">${contactBlock()}</div>` : `<div style="height:30px"></div>`}
-    <div class="legal">© ${new Date().getFullYear()} E Plugg. All prices in USD · Shipping to the contiguous United States. Some products are sold by partner retailers; we may earn a commission.
+    <div class="legal">© ${new Date().getFullYear()} E Plugg. All prices in USD · Shipping to the contiguous United States. Some products are sold by partner retailers; we may earn a commission. As an Amazon Associate, E Plugg earns from qualifying purchases.
       <div class="pay-badges"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>G PAY</span><span class="stripe">STRIPE SECURE</span></div></div>
   </div>`;
 }
@@ -482,7 +498,9 @@ window.addEventListener("hashchange", route);
       fetch("data/categories.json").then(r => r.json()),
       fetch("data/products.json").then(r => r.json()),
     ]);
-    state.categories = cats; state.products = Array.isArray(prods) ? prods : [];
+    state.categories = cats;
+    state.products = (Array.isArray(prods) ? prods : [])
+      .map(p => p.amazon ? { ...p, partner_url: amazonLink(p) } : p);
   } catch (err) { console.error("Couldn’t load catalog", err); }
   state.loaded = true;
   renderChrome(); updateCartCount(); route();
